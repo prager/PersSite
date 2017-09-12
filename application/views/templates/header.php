@@ -15,17 +15,17 @@
     <meta name="robots" content="index,follow">
     
     
-    <title>DevBlog - Personal Blog Template</title>
+    <title>Jan Kulisek</title>
     
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="<?php echo base_url() ;?>assets/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="<?php echo base_url() ;?>images/favicon/apple-touch-icon.png">
     
     <!-- All CSS Plugins -->
-    <link rel="stylesheet" type="text/css" href="css/plugin.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ;?>assets/css/plugin.css">
     
     <!-- Main CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ;?>assets/css/style.css">
     
     <!-- Google Web Fonts  -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
@@ -60,20 +60,20 @@
     <div class="about-fixed">
              
     <div class="my-pic">
-    <img src="images/pic/my-pic.png" alt="">
+    <img src="<?php echo base_url() ;?>assets/images/pic/my-pic.png" alt="">
     <a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
     <div id="menu" class="collapse">
     <ul class="menu-link">
-	    <li><a href="about.html">About</a></li>
-	    <li><a href="work.html">Work</a></li>
-	    <li><a href="contact.html">Contact</a></li>
+	    <li><a href="<?php echo base_url() ;?>about.html">About</a></li>
+	    <li><a href="<?php echo base_url() ;?>work.html">Work</a></li>
+	    <li><a href="<?php echo base_url() ;?>contact.html">Contact</a></li>
     </ul>
     </div>
   </div>      
   <div class="my-detail">
     <div class="white-spacing">
-    <h1>Alex Parker</h1>
-    <span>Web Developer</span>
+    <h1>Jan Kulisek</h1>
+    <span>Software Developer</span>
     </div> 
     <ul class="social-icon">
                          <li><a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>

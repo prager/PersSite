@@ -9,7 +9,7 @@
                                <li><a href="contact.html">Contact</a></li>
                             </ul>
 
-                          <p>&copy; Copyright 2016 - <?php echo Date('Y'); ?>  <?php bloginfo('name'); ?>. All rights reserved</p>
+                          <p>&copy; Copyright 2016 - <?php echo Date('Y'); ?>  Jan Kulisek. All rights reserved</p>
 
 
 						  <!-- UiPasta Credit Start -->
@@ -18,7 +18,6 @@
 
 
                          </footer>
-                         <?php wp_footer(); ?>
                        </div>
                        <!-- Footer End -->
 
@@ -38,11 +37,11 @@
 
 
     <!-- All Javascript Plugins  -->
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/plugin.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ;?>/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ;?>/assets/js/plugin.js"></script>
 
     <!-- Main Javascript File  -->
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ;?>/assets/js/scripts.js"></script>
 
 
    </body>

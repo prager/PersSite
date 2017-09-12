@@ -6,7 +6,7 @@
                             
                             <div class="sub-title">
                            		<h2>My Blog</h2>
-                                <a href="contact.html"><i class="icon-envelope"></i></a>
+                                <a href="<?php echo base_url() ;?>/contact.html"><i class="icon-envelope"></i></a>
                              </div>
                             
                             
@@ -16,10 +16,10 @@
                                 <!-- Blog Post Start -->
                                 <div class="col-md-12 blog-post">
                                     <div class="post-title">
-                                      <a href="single.html"><h1>How to make your company website based on bootstrap framework on localhost?</h1></a>
+                                      <a href="<?php echo base_url() ;?>/single.html"><h1>How to make your company website based on bootstrap framework on localhost?</h1></a>
                                     </div>  
                                     <div class="post-info">
-                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Alex Parker</a></span>
+                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Jan Kulisek</a></span>
                                     </div>  
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique temporibus tempora dicta soluta? Qui hic, voluptatem nemo quo corporis dignissimos voluptatum debitis cumque fugiat mollitia quasi quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique.</p>                          			
                                     <a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Read More</span></a>
@@ -31,10 +31,11 @@
                                 <!-- Blog Post Start -->
                                 <div class="col-md-12 blog-post">
                                     <div class="post-title">
-                                      <a href="single.html"><h1>How to design elegant e-mail newsletter in html for wish christmas to your subscribers?</h1></a>
+                                      <a href="<?php echo base_url() ;?>/single.html">
+                                      <h1>How to design elegant e-mail newsletter in html for wish christmas to your subscribers?</h1></a>
                                     </div>  
                                     <div class="post-info">
-                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Alex Parker</a></span>
+                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Jan Kulisek</a></span>
                                     </div>  
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique temporibus tempora dicta soluta? Qui hic, voluptatem nemo quo corporis dignissimos voluptatum debitis cumque fugiat mollitia quasi quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique.</p>
                                     <a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Read More</span></a>
@@ -46,13 +47,13 @@
                                 <!-- Blog Post Start -->
                                 <div class="col-md-12 blog-post">
                                 	<div class="post-image">
-                                    	<img src="images/blog/1.jpg" alt="">                                       
+                                    	<img src="<?php echo base_url() ;?>/images/blog/1.jpg" alt="">                                       
                                     </div> 
                                     <div class="post-title">
                                       <a href="single.html"><h1>Make mailchimp singup form working with ajax using jquery plugin</h1></a>
                                     </div>  
                                     <div class="post-info">
-                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Alex Parker</a></span>
+                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Jan Kulisek</a></span>
                                     </div>  
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique temporibus tempora dicta soluta? Qui hic, voluptatem nemo quo corporis dignissimos voluptatum debitis cumque fugiat mollitia quasi quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique.</p>                          			
                                     <a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Read More</span></a>
@@ -64,10 +65,10 @@
                                 <!-- Blog Post Start -->
                                 <div class="col-md-12 blog-post">
                                     <div class="post-title">
-                                      <a href="single.html"><h1>Develop a custom wordpress membership plugin from scratch using framework on localhost - part 1</h1></a>
+                                      <a href="<?php echo base_url() ;?>/single.html"><h1>Develop a custom wordpress membership plugin from scratch using framework on localhost - part 1</h1></a>
                                     </div>  
                                     <div class="post-info">
-                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Alex Parker</a></span>
+                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Jan Kulisek</a></span>
                                     </div>  
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique temporibus tempora dicta soluta? Qui hic, voluptatem nemo quo corporis dignissimos voluptatum debitis cumque fugiat mollitia quasi quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique.</p>                          			
                                     <a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Read More</span></a>
@@ -79,10 +80,10 @@
                                 <!-- Blog Post Start -->
                                 <div class="col-md-12 blog-post">
                                     <div class="post-title">
-                                      <a href="single.html"><h1>How to customize a wordpress theme entirely from scratch using a child theme?</h1></a>
+                                      <a href="<?php echo base_url() ;?>/single.html"><h1>How to customize a wordpress theme entirely from scratch using a child theme?</h1></a>
                                     </div>  
                                     <div class="post-info">
-                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Alex Parker</a></span>
+                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Jan Kulisek</a></span>
                                     </div>  
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique temporibus tempora dicta soluta? Qui hic, voluptatem nemo quo corporis dignissimos voluptatum debitis cumque fugiat mollitia quasi quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique.</p>                          			
                                     <a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Read More</span></a>
@@ -94,13 +95,13 @@
                                 <!-- Blog Post Start -->
                                 <div class="col-md-12 blog-post">
                                 	<div class="post-image">
-                                    	<img src="images/blog/2.jpg" alt="">                                       
+                                    	<img src="<?php echo base_url() ;?>/images/blog/2.jpg" alt="">                                       
                                     </div> 
                                     <div class="post-title">
-                                      <a href="single.html"><h1>What makes wordpress a unique and highly customizable platform from competitors?</h1></a>
+                                      <a href="<?php echo base_url() ;?>/single.html"><h1>What makes wordpress a unique and highly customizable platform from competitors?</h1></a>
                                     </div>  
                                     <div class="post-info">
-                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Alex Parker</a></span>
+                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Jan Kulisek</a></span>
                                     </div>  
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique temporibus tempora dicta soluta? Qui hic, voluptatem nemo quo corporis dignissimos voluptatum debitis cumque fugiat mollitia quasi quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique.</p>                          			
                                     <a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Read More</span></a>
@@ -112,10 +113,10 @@
                                 <!-- Blog Post Start -->
                                 <div class="col-md-12 blog-post">
                                     <div class="post-title">
-                                      <a href="single.html"><h1>What mistakes every beginner make, when they make website using bootstrap?</h1></a> 
+                                      <a href="<?php echo base_url() ;?>/single.html"><h1>What mistakes every beginner make, when they make website using bootstrap?</h1></a> 
                                     </div>  
                                     <div class="post-info">
-                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Alex Parker</a></span>
+                                    	<span>November 23, 2016 / by <a href="#" target="_blank">Jan Kulisek</a></span>
                                     </div>  
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique temporibus tempora dicta soluta? Qui hic, voluptatem nemo quo corporis dignissimos voluptatum debitis cumque fugiat mollitia quasi quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut ratione similique.</p>                          			
                                     <a href="single.html" class="button button-style button-anim fa fa-long-arrow-right"><span>Read More</span></a>
@@ -131,8 +132,6 @@
                              </div>
                               
                          </div>
-                         
-                        
                         
                         <!-- Subscribe Form Start -->
                         <div class="col-md-8 col-md-offset-2">
