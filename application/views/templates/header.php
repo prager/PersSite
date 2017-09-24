@@ -10,7 +10,7 @@
     <!-- SEO -->
     <meta name="description" content="150 words">
     <meta name="author" content="uipasta">
-    <meta name="url" content="http://kulisek.org">
+    <meta name="url" content="http://pers.jlkconsulting.info">
     <meta name="copyright" content="JLK Consulting">
     <meta name="robots" content="index,follow">
     
@@ -64,7 +64,8 @@
     <a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
     <div id="menu" class="collapse">
     <ul class="menu-link">
-	    <li><a href="<?php echo base_url() ;?>about.html">About</a></li>
+	    <!-- <li><a href="<?php echo base_url() ;?>about.html">About</a></li> -->
+	    <li><?php echo anchor('home/about', 'About'); ?></li>
 	    <li><a href="<?php echo base_url() ;?>work.html">Work</a></li>
 	    <li><a href="<?php echo base_url() ;?>contact.html">Contact</a></li>
     </ul>
@@ -82,7 +83,7 @@
                          <li><a href="#" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
                         </ul>
 
-                    </div>
-                  </div>
-                </div>
-                <!-- About Me (Left Sidebar) End -->
+    </div>
+    </div>
+    </div>
+<!-- About Me (Left Sidebar) End -->

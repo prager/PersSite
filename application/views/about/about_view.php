@@ -1,107 +1,4 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    
-    <!-- Meta Tag -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- SEO -->
-    <meta name="description" content="150 words">
-    <meta name="author" content="uipasta">
-    <meta name="url" content="http://www.yourdomainname.com">
-    <meta name="copyright" content="company name">
-    <meta name="robots" content="index,follow">
-    
-    
-    <title>DevBlog - Personal Blog Template</title>
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
-    
-    <!-- All CSS Plugins -->
-    <link rel="stylesheet" type="text/css" href="css/plugin.css">
-    
-    <!-- Main CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
-    <!-- Google Web Fonts  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
-    
-    
-    <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-	   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-
-  </head>
-
- <body>
-
-	
-     
-	 <!-- Preloader Start -->
-     <div class="preloader">
-	   <div class="rounder"></div>
-      </div>
-      <!-- Preloader End -->
-      
-      
-    
-    
-    <div id="main">
-        <div class="container">
-            <div class="row">
-            	
-               
-                 
-                 <!-- About Me (Left Sidebar) Start -->
-                 <div class="col-md-3">
-                   <div class="about-fixed">
-                    
-                     <div class="my-pic">
-                        <img src="images/pic/my-pic.png" alt="">
-                        <a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
-                         <div id="menu" class="collapse">
-                           <ul class="menu-link">
-                               <li><a href="about.html">About</a></li>
-                               <li><a href="work.html">Work</a></li>
-                               <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                         </div>
-                        </div>
-                      
-                      
-                      
-                      <div class="my-detail">
-                    	
-                        <div class="white-spacing">
-                            <h1>Alex Parker</h1>
-                            <span>Web Developer</span>
-                        </div> 
-                       
-                       <ul class="social-icon">
-                         <li><a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                         <li><a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                         <li><a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                         <li><a href="#" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
-                        </ul>
-
-                    </div>
-                  </div>
-                </div>
-                <!-- About Me (Left Sidebar) End -->
-                
-                
-                
-                
-                 
-                 <!-- About Me (Right Sidebar) Start -->
+﻿              <!-- About Me (Right Sidebar) Start -->
                  <div class="col-md-9">
                     <div class="col-md-12 page-body">
                     	<div class="row">
@@ -130,9 +27,18 @@
                                      
                                    </div>
                                    <!-- My Intro End -->
-                                    
-                                    
-                                    <p>I am in the website field since 2004 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at quam at orci commodo hendrerit vitae nec eros. Vestibulum neque est, imperdiet nec tortor nec, tempor semper metus. <b>I am a developer</b>, et accumsan nisi. Duis laoreet pretium ultricies. Curabitur rhoncus auctor nunc congue sodales. Sed posuere nisi ipsum, eget dignissim nunc dapibus eget. Aenean elementum sollicitudin sapien ut sapien fermentum aliquet mollis. Curabitur ac quam orci sodales quam ut tempor. suspendisse, gravida in augue in, interdum <b><a href="work.html" data-toggle="tooltip" data-placement="top" title="Check out my work.">Work</a></b> bibendum dui. Suspendisse sit amet justo sit amet diam fringilla commodo. Praesent ac magna at metus malesuada tincidunt non ac arcu. Nunc gravida eu felis vel elementum. Vestibulum sodales quam ut tempor tempor Donec sollicitudin imperdiet nec tortor nec, tempor semper metus..</p>
+                                    <p>I am in the website field since 2004 Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit. Proin at quam at orci commodo hendrerit vitae nec eros. 
+                                    Vestibulum neque est, imperdiet nec tortor nec, tempor semper metus. <b>I am a developer</b>,
+                                     et accumsan nisi. Duis laoreet pretium ultricies. Curabitur rhoncus auctor nunc congue sodales. 
+                                     Sed posuere nisi ipsum, eget dignissim nunc dapibus eget. Aenean elementum sollicitudin sapien ut 
+                                     sapien fermentum aliquet mollis. Curabitur ac quam orci sodales quam ut tempor. suspendisse, gravida
+                                      in augue in, interdum <b>
+                                      <a href="work.html" data-toggle="tooltip" data-placement="top" title="Check out my work.">Work</a></b>
+                                       bibendum dui. Suspendisse sit amet justo sit amet diam fringilla commodo. Praesent ac magna at 
+                                       metus malesuada tincidunt non ac arcu. Nunc gravida eu felis vel elementum. 
+                                       Vestibulum sodales quam ut tempor tempor Donec sollicitudin imperdiet nec tortor nec, tempor 
+                                       semper metus..</p>
                                    
                                  
                                  
@@ -140,7 +46,7 @@
                                  <div class="video-box margin-top-40 margin-bottom-80">
                                   <div class="video-tutorial">
                                    <a class="video-popup" href="https://www.youtube.com/watch?v=O2Bsw3lrhvs" title="My Thought">
-                                   <img src="images/pic/my-pic.png" alt="">
+                                   <img src="<?php echo base_url() ;?>assets/images/pic/my-pic.png" alt="">
                                    </a>                           
                                   </div>
                                  <p>Take a look about my thought on website design.</p>
