@@ -10,16 +10,16 @@ class Home extends CI_Controller {
 	
 	public function index() {
 		$data = NULL;
-		$this->load->view('templates/header');
+		//$this->load->view('templates/header');
 		$this->load->view('home/home_view', $data);
-		$this->load->view('templates/footer');
+		//$this->load->view('templates/footer');
 	}
 	
 	public function about() {
 		
 		$data = NULL;
-		$this->load->view('templates/header');
+		//$this->load->view('templates/header');
 		$this->load->view('about/about_view', $data);
-		$this->load->view('templates/footer');
+		//$this->load->view('templates/footer');
 	}
 }
