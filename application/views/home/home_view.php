@@ -97,7 +97,7 @@
 								<a href='#' data-section='contact' >Contact</a>
 							</li>
 							<li>
-								<a href='#' >Hire Me!</a>
+								<<a href="#" data-section='login' >Login</a>
 							</li>
 						</ul>
 					</nav>
@@ -2294,6 +2294,121 @@
 				/Contact Section
 			===============================================================================-->
 
+			<!--=============================================================================
+				Login Section
+			===============================================================================-->
+			<section id='login' class='contact-section section' >
+
+				<div class='contact-block section-block' >
+					<div class='container' >
+						<div class='row' >
+							<div class='col-md-6 col-md-offset-3' >
+
+								<div class='section-header text-center' >
+									<h2 class='animate text-over-block' >User Login</h2>
+									<!--divider-->
+									<div class='divider-draft center' ></div>
+									<!--/divider-->
+								</div>
+
+							</div>
+						</div>
+
+						<div class='row' >
+							<div class='col-md-8 col-md-offset-2' id='contact-form'>
+
+								<form class='contact-form' action='mail.php' method='post' data-toggle='validator' >
+
+									<div id='contact-form-result' ></div>
+
+									<div class='row' >
+
+										<div class='col-md-3' >&nbsp;</div>
+
+										<div class='col-md-6' >
+											<div class='form-group' >
+												<input type='text' class='form-control' placeholder='Username' required>
+												<div class='help-block with-errors' ></div>
+
+											</div>
+										</div>
+
+									</div>
+
+									<div class='row' >
+
+										<div class='col-md-3' >&nbsp;</div>
+
+										<div class='col-md-6' >
+											<div class='form-group' >
+												<input type='password' class='form-control' placeholder='password' required>
+												<div class='help-block with-errors' ></div>
+
+											</div>
+										</div>
+
+									</div>
+									<div class='row' >&nbsp;</div>
+									<div class='form-group text-center' >
+										<button type='submit' class='symp-btn' >Login</button>
+									</div>
+
+								</form>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+
+				<div class='footer bg-lightgray section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-xs-6 text-left' >
+								<h4>Johny Doe</h4>
+							</div>
+
+							<div class='col-xs-6 text-right' >
+								<ul class='footer-social' >
+									<li>
+										<a href='#' >
+											<i class='ion-social-facebook' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='#' >
+											<i class='ion-social-twitter' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='#' >
+											<i class='ion-social-pinterest' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='#' >
+											<i class='ion-social-dribbble' ></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+			</section>
+			<!--=============================================================================
+				/Login Section
+			===============================================================================-->
 
 			<!--close button-->
 			<div class='close-btn' >
@@ -2301,6 +2416,7 @@
 				<span></span>
 			</div>
 			<!--/close button-->
+
 
 
 		</div>
