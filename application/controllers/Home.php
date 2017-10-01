@@ -10,9 +10,9 @@ class Home extends CI_Controller {
 	
 	public function index() {
 		$data = NULL;
-		//$this->load->view('templates/header');
+		$this->load->view('templates/header');
 		$this->load->view('home/home_view', $data);
-		//$this->load->view('templates/footer');
+		$this->load->view('templates/footer');
 	}
 	
 	public function about() {
@@ -20,6 +20,21 @@ class Home extends CI_Controller {
 		$data = NULL;
 		//$this->load->view('templates/header');
 		$this->load->view('about/about_view', $data);
-		//$this->load->view('templates/footer');
+		$this->load->view('templates/footer');
+	}
+	
+	public function work() {
+		$data = NULL;
+		$this->load->view('templates/header');
+		$this->load->view('work/work_view', $data);
+		$this->load->view('templates/footer');
+	}
+	
+	public function login() {
+		
+		$data = NULL;
+		$this->load->view('templates/header');
+		$this->load->view('home/login_view', $data);
+		$this->load->view('templates/footer');
 	}
 }

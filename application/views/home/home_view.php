@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html class='no-js' >
-<!-- Inspired by: http://www.uipasta.com/symp-responsive-vcard-resume-template/ -->
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-
-		<title>V Card Jan Kulisek</title>
-
-		<!--[if lt IE 9]>
-		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-
-		<link rel='stylesheet' type='text/css' href='<?php echo base_url() ;?>/assets/bootstrap/css/bootstrap.min.css' >
-		<link rel='stylesheet' type='text/css' href='<?php echo base_url() ;?>assets/css/ionicons.min.css' >
-
-		<link rel='stylesheet' type='text/css' href='<?php echo base_url() ;?>/assets/css/owl.carousel.css' >
-		<link rel='stylesheet' type='text/css' href='<?php echo base_url() ;?>/assets/css/owl.theme.css' >
-		<link rel='stylesheet' type='text/css' href='<?php echo base_url() ;?>/assets/css/owl.transitions.css' >
-		<link rel='stylesheet' type='text/css' href='<?php echo base_url() ;?>/assets/css/magnific-popup.css' >
-		<link rel='stylesheet' type='text/css' href='<?php echo base_url() ;?>/assets/css/style.css' >
-		<link rel='stylesheet' type='text/css' href='<?php echo base_url() ;?>/assets/css/color-turquoise.css' >
-
-
-	</head>
-	<body>
 
 		<!--=============================================================================
 			Preloader
@@ -41,7 +12,7 @@
 			Main Wrapper
 		===============================================================================-->
 		<div id='wrapper' >
-			<!--=============================================================================
+		<!--=============================================================================
 				Front Section
 			===============================================================================-->
 			<section class='front-section' >
@@ -98,7 +69,7 @@
 								<a href='#' data-section='contact' >Contact</a>
 							</li>
 							<li>
-								<<a href="#" data-section='login' >Login</a>
+								<a href="#" data-section='login' >Login</a>
 							</li>
 						</ul>
 					</nav>
@@ -2426,21 +2397,4 @@
 		===============================================================================-->
 
 
-		<!--=============================================================================
-			JavaScript Files
-		===============================================================================-->
-		<script src='<?php echo base_url() ;?>/assets/js/jquery.min.js' ></script>
-		<script src='<?php echo base_url() ;?>/assets/js/jquery.stellar.min.js' ></script>
-		<script src='<?php echo base_url() ;?>/assets/js/modernizr.js' ></script>
-		<script src='<?php echo base_url() ;?>/assets/js/owl.carousel.min.js' ></script>
-		<script src='<?php echo base_url() ;?>/assets/js/jquery.shuffle.min.js' ></script>
-		<script src='<?php echo base_url() ;?>/assets/js/jquery.magnific-popup.min.js' ></script>
-		<script src='<?php echo base_url() ;?>/assets/js/validator.min.js' ></script>
-		<script src='<?php echo base_url() ;?>/assets/js/smoothscroll.js' ></script>
-		<script src='<?php echo base_url() ;?>/assets/js/script.js' ></script>
-
-
-
-	</body>
-
-</html>
+		
