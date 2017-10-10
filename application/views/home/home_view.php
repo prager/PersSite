@@ -20,7 +20,7 @@
 					<div class='transition-mask' ></div>
 					<div class='front-person-img' >
 						<!--person's image-->
-						<img src='<?php echo base_url() ;?>/assets/img/me.png' alt='Symp' >
+						<img src='<?php echo base_url() ;?>/assets/img/new.png' alt='Symp' >
 						<!--/person's image-->
 					</div>
 					<!--person's titles-->
@@ -100,7 +100,7 @@
 						<div class='row' >
 							<div class='col-md-4' >
 								<div class='about-person-img' >
-									<img src='<?php echo base_url() ;?>/assets/img/me.png' alt='symp'>
+									<img src='<?php echo base_url() ;?>/assets/img/new.png' alt='symp'>
 								</div>
 							</div>
 							<div class='col-md-8 about-info' >
