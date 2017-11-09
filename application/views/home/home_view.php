@@ -69,7 +69,9 @@
 								<a href='#' data-section='contact' >Contact</a>
 							</li>
 							<li>
-								<a href="#" data-section='login' >Login</a>
+								<!-- <a href="#" data-section='login' >Login</a> -->	
+								<a href="<?php echo base_url() ;?>index.php/home/login">Login</a>							
+								<?php //anchor('home/login', 'Login'); ?>
 							</li>
 						</ul>
 					</nav>
