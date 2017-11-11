@@ -56,12 +56,12 @@
 							<li>
 								<a href='#' data-section='resume' >Resume</a>
 							</li>
-							<li>
+							<!-- <li>
 								<a href='#' data-section='services' >Services</a>
 							</li>
 							<li>
 								<a href='#' data-section='portfolio' >Portfolio</a>
-							</li>
+							</li> -->
 							<li>
 								<a href='#' data-section='blog' >My Blog</a>
 							</li>
@@ -77,7 +77,7 @@
 					</nav>
 					<div class='front-heading text-center' >
 						<h2>
-							Johny Doe
+							Jan Kulisek
 						</h2>
 					</div>
 				</div>
@@ -107,7 +107,7 @@
 							</div>
 							<div class='col-md-8 about-info' >
 								<p>
-									Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an, cum dicta iriure at. Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Te cum tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi corrumpit et, fugit apeirian duo ad. Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda inciderint has. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero cum. Solet honestatis et eum. Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an, cum dicta iriure at. Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Te cum tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi corrumpit et, fugit apeirian duo ad.
+								Please, be patient, my bio is coming soon. I am building my profile at this time. Feel free to come back for updates any time.	
 								</p>
 
 								<div class='clearfix' ></div>
@@ -118,30 +118,30 @@
 									<li>
 										<div class='inner' >
 											<h4>Name</h4>
-											<p>Johny Doe</p>
+											<p>Jan Kulisek</p>
 										</div>
 									</li>
 									<li>
 										<div class='inner' >
 											<h4>Age</h4>
-											<p>24 Years</p>
+											<p>Productive</p>
 										</div>
 									</li>
 									<li>
 										<div class='inner' >
 											<h4>Website</h4>
-											<p>example.com</p>
+											<p>kulisek.org</p>
 										</div>
 									</li>
 									<li>
 										<div class='inner' >
 											<h4>Hometown</h4>
-											<p>Dokri</p>
+											<p>Concord, CA</p>
 										</div>
 									</li>
 								</ul>
-								<a href='#' class='symp-btn' >Hire Me For Work</a>
-								<a href='#' class='symp-btn link-btn' ><i class='ion-ios-download' ></i>Download Resume</a>
+								<!-- <a href='#' class='symp-btn' >Hire Me For Work</a>
+								<a href='#' class='symp-btn link-btn' ><i class='ion-ios-download' ></i>Download Resume</a> -->
 							</div>
 						</div>
 					</div>
@@ -256,92 +256,11 @@
 						</div>
 					</div>
 				</div>
-				<div class='funfacts-block section-block' data-stellar-background-ratio='.2' >
-					<div class='container' >
-						<div class='row' >
-							<div class='col-md-3 col-sm-6 funfact' >
-								<div class='content' >
-									<h4>243</h4>
-									<p>Awards Won</p>
-								</div>
-							</div>
-
-							<div class='col-md-3 col-sm-6 funfact' >
-								<div class='content' >
-									<h4>845</h4>
-									<p>Happy Customers</p>
-								</div>
-							</div>
-
-							<div class='col-md-3 col-sm-6 funfact' >
-								<div class='content' >
-									<h4>938</h4>
-									<p>Projects Done</p>
-								</div>
-							</div>
-
-							<div class='col-md-3 col-sm-6 funfact' >
-								<div class='content' >
-									<h4>342</h4>
-									<p>Games Played</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class='testimonials-block section-block' >
-					<div class='container' >
-						<div class='section-header text-center' >
-							<h2 class='animate text-over-block' >Testimonials</h2>
-							<!--divider-->
-							<div class='divider-draft center' ></div>
-							<!--/divider-->
-						</div>
-						<div class='row' >
-							<div class='col-md-8 col-md-offset-2' >
-								<div class='testimonials-slider' >
-									<div class='testimonial' >
-										<p>
-											Ad optere volibus nec, sea ei civibus prasent. At timeam expetenda inciderint has. 
-											Invidunt constituto ne per, paulo omnium queum his eu, cu congue consul cetero. 
-											Invidunt constituto ne per, paulo omnium his eu, cu congue consul cetero.
-										</p>
-										<div class='author' >
-											<h4>Jack Smith</h4>
-											<p>CEO at Google</p>
-										</div>
-									</div>
-									<div class='testimonial' >
-										<p>
-											Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda inciderint has. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero.
-										</p>
-
-										<div class='author' >
-											<h4>Jessica Smith</h4>
-											<p>CEO at Google</p>
-										</div>
-									</div>
-									<div class='testimonial' >
-										<p>
-											Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda inciderint has. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero. Invidunt constituto ne per, paulo omnium quaerendum his eu, cu congue consul cetero.
-										</p>
-
-										<div class='author' >
-											<h4>Jim Smith</h4>
-											<p>CEO at Google</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
 				<div class='footer bg-lightgray section-block' >
 					<div class='container' >
 						<div class='row' >
 							<div class='col-xs-6 text-left' >
-								<h4>Johny Doe</h4>
+								<h4>Jan Kulisek</h4>
 							</div>
 							<div class='col-xs-6 text-right' >
 								<ul class='footer-social' >
@@ -397,41 +316,18 @@
 					<div class='container' >
 						<ul class='timeline' >
 							<li class='timeline-header' >
-								<h4>Education</h4>
+							<h4>Education</h4>
+								<!-- <h4>Education</h4> -->
 							</li>
-							<li>
+							 <li>
 								<div class='timeline-desc' >
-									<h4>2005-2007</h4>
+									<h4>2009-2016</h4>
 								</div>
 								<div class='timeline-content' >
-									<h4>Masters Degree</h4>
-									<span>@CSS College Larkana</span>
+									<h4>Bachelor's Degree</h4>
+									<span>Franklin University in Columbus, OH</span>
 									<p>
-										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
-									</p>
-								</div>
-							</li>
-							<li class='inverse' >
-								<div class='timeline-desc' >
-									<h4>2005-2007</h4>
-								</div>
-								<div class='timeline-content' >
-									<h4>Masters Degree</h4>
-									<span>@CSS College Larkana</span>
-									<p>
-										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
-									</p>
-								</div>
-							</li>
-							<li>
-								<div class='timeline-desc' >
-									<h4>2005-2007</h4>
-								</div>
-								<div class='timeline-content' >
-									<h4>Masters Degree</h4>
-									<span>@CSS College Larkana</span>
-									<p>
-										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+									Computer Science Degree achieved while<br>on full time job in the US Army.
 									</p>
 								</div>
 							</li>
@@ -446,17 +342,20 @@
 
 								<div class='timeline-desc' >
 
-									<h4>2005-2007</h4>
+									<h4>2003-Present</h4>
 
 								</div>
 
 								<div class='timeline-content' >
 
-									<h4>Web Designer</h4>
-									<span>@Themeforest</span>
+									<h4>Web Developer</h4>
+									<span>JLK Consulting in Concord, CA</span>
 
 									<p>
-										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+									Current projects involve PHP, CodeIgniter<br>
+									and MySQL on back end. Up until retirement from<br>
+									the US Army on partime basis and since July 2016<br>
+									full time.
 									</p>
 
 								</div>
@@ -467,17 +366,20 @@
 
 								<div class='timeline-desc' >
 
-									<h4>2005-2007</h4>
+									<h4>2003-2016</h4>
 
 								</div>
 
 								<div class='timeline-content' >
 
-									<h4>Web Developer</h4>
-									<span>@CodeCanyon</span>
+									<h4>Operations NCO</h4>
+									<span>US Army (many locations)</span>
 
 									<p>
-										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+									Prepared and resourced training for the US Army personnel<br>
+									consisting of senior ranking Officiers and Non-Comissioned<br>
+									Officers regarding technical training in proprietory software,<br>
+									among many other duties. 
 									</p>
 
 								</div>
@@ -488,36 +390,35 @@
 
 								<div class='timeline-desc' >
 
-									<h4>2005-2007</h4>
+									<h4>1997-2002</h4>
 
 								</div>
 
 								<div class='timeline-content' >
 
-									<h4>Blogger</h4>
-									<span>@blogspot</span>
+									<h4>Software Engineer</h4>
+									<span>Systron Donner in Concord, CA</span>
 
 									<p>
-										Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo.
+									Software engineer during 2000-2002 and electronic<br>
+									technician during 1997-2000. Developed instrument testing<br>
+									software inVisual Basic and C.
 									</p>
 
 								</div>
 
 							</li>
 
-
 						</ul>
 					</div>
 				</div>
 
-				<div class='hobbies-block bg-lightgray section-block' >
+			<!--<div class='hobbies-block bg-lightgray section-block' >
 					<div class='container' >
 
 						<div class='section-header text-center' >
 							<h2 class='animate text-over-block' >My Hobbies</h2>
-							<!--divider-->
 							<div class='divider-draft center' ></div>
-							<!--/divider-->
 						</div>
 
 						<div class='row' >
@@ -601,9 +502,7 @@
 					<div class='container' >
 						<div class='section-header text-center' >
 							<h2 class='animate text-over-block' >My Skills</h2>
-							<!--divider-->
 							<div class='divider-draft center' ></div>
-							<!--/divider-->
 						</div>
 						<div class='row' >
 							<div class='col-md-6' >
@@ -679,7 +578,7 @@
 
 					</div>
 
-				</div>
+				</div>  -->
 
 				<div class='footer bg-lightgray section-block' >
 
@@ -688,7 +587,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Johny Doe</h4>
+								<h4>Jan Kulisek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
@@ -1238,7 +1137,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Johny Doe</h4>
+								<h4>Jan Kulisek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
@@ -1658,7 +1557,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Johny Doe</h4>
+								<h4>Jan Kulisek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
@@ -1718,16 +1617,17 @@
 								<!--/divider-->
 
 								<p>
-									This is my blog where my thoughts live. Check it out to know more about me. Lorem ipsum dolor sit amet.
+									This is my blog where my future thoughts will live. Currently under development. Please, be patient and come back soon.
 								</p>
-
 							</div>
 						</div>
-
 					</div>
-
 				</div>
-
+				<div class='row' >&nbsp;</div>
+				<div class='row' >&nbsp;</div>
+				<div class='row' >&nbsp;</div>
+				<div class='row' >&nbsp;</div>
+<!-- 
 				<div class='posts-block section-block' >
 
 					<div class='container' >
@@ -1754,7 +1654,7 @@
 
 											<li>
 												<i class='ion-ios-person' ></i>
-												<span>Johny Doe</span>
+												<span>Jan Kulisek</span>
 											</li>
 
 											<li>
@@ -1802,7 +1702,7 @@
 
 											<li>
 												<i class='ion-ios-person' ></i>
-												<span>Johny Doe</span>
+												<span>Jan Kulisek</span>
 											</li>
 
 											<li>
@@ -1850,7 +1750,7 @@
 
 											<li>
 												<i class='ion-ios-person' ></i>
-												<span>Johny Doe</span>
+												<span>Jan Kulisek</span>
 											</li>
 
 											<li>
@@ -2076,7 +1976,7 @@
 
 					</div>
 
-				</div>
+				</div> -->
 
 
 				<div class='footer bg-lightgray section-block' >
@@ -2086,7 +1986,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Johny Doe</h4>
+								<h4>Jan Kulisek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
@@ -2144,7 +2044,7 @@
 									<div class='divider-draft center' ></div>
 									<!--/divider-->
 									<p>
-										I'm available for freelancing. If you want something to be built or just to say hi, feel free to shoot me a message.
+										In case you have anything specific to say or just to say hi, feel free to shoot me a message.
 									</p>
 								</div>
 
@@ -2153,8 +2053,8 @@
 
 						<div class='row' >
 							<div class='col-md-8 col-md-offset-2' >
-
-								<form id='contact-form' class='contact-form' action='mail.php' method='post' data-toggle='validator' >
+								<?php echo form_open('home/msg', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>
+								<!-- <form id='contact' name='contact' class='contact-form' action='mail.php' method='post' data-toggle='validator' > -->
 
 									<div id='contact-form-result' ></div>
 
@@ -2209,9 +2109,8 @@
 									<div class='form-group text-center' >
 										<button type='submit' class='symp-btn' >Send Message</button>
 									</div>
-
-
-								</form>
+								<?php echo form_close(); ?>
+								<!-- </form> -->
 							</div>
 						</div>
 
@@ -2227,7 +2126,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Johny Doe</h4>
+								<h4>Jan Kulisek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
@@ -2268,121 +2167,6 @@
 				/Contact Section
 			===============================================================================-->
 
-			<!--=============================================================================
-				Login Section
-			===============================================================================-->
-			<section id='login' class='contact-section section' >
-
-				<div class='contact-block section-block' >
-					<div class='container' >
-						<div class='row' >
-							<div class='col-md-6 col-md-offset-3' >
-
-								<div class='section-header text-center' >
-									<h2 class='animate text-over-block' >User Login</h2>
-									<!--divider-->
-									<div class='divider-draft center' ></div>
-									<!--/divider-->
-								</div>
-
-							</div>
-						</div>
-
-						<div class='row' >
-							<div class='col-md-8 col-md-offset-2' id='contact-form'>
-
-								<form class='contact-form' action='mail.php' method='post' data-toggle='validator' >
-
-									<div id='contact-form-result' ></div>
-
-									<div class='row' >
-
-										<div class='col-md-3' >&nbsp;</div>
-
-										<div class='col-md-6' >
-											<div class='form-group' >
-												<input type='text' class='form-control' placeholder='Username' required>
-												<div class='help-block with-errors' ></div>
-
-											</div>
-										</div>
-
-									</div>
-
-									<div class='row' >
-
-										<div class='col-md-3' >&nbsp;</div>
-
-										<div class='col-md-6' >
-											<div class='form-group' >
-												<input type='password' class='form-control' placeholder='password' required>
-												<div class='help-block with-errors' ></div>
-
-											</div>
-										</div>
-
-									</div>
-									<div class='row' >&nbsp;</div>
-									<div class='form-group text-center' >
-										<button type='submit' class='symp-btn' >Login</button>
-									</div>
-
-								</form>
-							</div>
-						</div>
-
-
-					</div>
-				</div>
-
-
-				<div class='footer bg-lightgray section-block' >
-
-					<div class='container' >
-
-						<div class='row' >
-
-							<div class='col-xs-6 text-left' >
-								<h4>Johny Doe</h4>
-							</div>
-
-							<div class='col-xs-6 text-right' >
-								<ul class='footer-social' >
-									<li>
-										<a href='#' >
-											<i class='ion-social-facebook' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-twitter' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-pinterest' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-dribbble' ></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-
-						</div>
-
-
-					</div>
-
-				</div>
-
-
-			</section>
-			<!--=============================================================================
-				/Login Section
-			===============================================================================-->
 
 			<!--close button-->
 			<div class='close-btn' >

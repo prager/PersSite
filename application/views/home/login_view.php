@@ -15,9 +15,8 @@
 		<!--=============================================================================
 				Front Section
 			===============================================================================-->
-			<section class='front-section' >
+			<section class='single-work' >
 				<div class='container' >
-				<div class='row' >&nbsp;</div>
 				<div class='contact-block section-block' >
 						<div class='row' >
 							<div class='col-md-6 col-md-offset-3' >
@@ -83,59 +82,5 @@
 
 					</div>
 				</div>
-
-
-				<div class='footer bg-lightgray section-block' >
-
-					<div class='container' >
-
-						<div class='row' >
-
-							<div class='col-xs-6 text-left' >
-								<h4>Johny Doe</h4>
-							</div>
-
-							<div class='col-xs-6 text-right' >
-								<ul class='footer-social' >
-									<li>
-										<a href='#' >
-											<i class='ion-social-facebook' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-twitter' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-pinterest' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-dribbble' ></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-
-						</div>
-
-
-					</div>
-
-				</div>	
-				
-					
-			</section>
-			<!--=============================================================================
-				/Front Section
-			===============================================================================-->
-		</div>
-		<!--=============================================================================
-			/Main Wrapper
-		===============================================================================-->
-
 
 		
