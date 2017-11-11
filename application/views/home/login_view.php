@@ -13,7 +13,7 @@
 		===============================================================================-->
 		<div id='wrapper' >
 		<!--=============================================================================
-				Front Section
+				Login Section
 			===============================================================================-->
 			<section class='single-work' >
 				<div class='container' >
@@ -27,7 +27,10 @@
 									<div class='divider-draft center' ></div>
 									<!--/divider-->
 									<p>
-										Please, enter your Username and Password.
+										Please, enter your Username and Password. <br>
+										<?php if($msg != NULL) {?>
+										<span style="color:red"><?php echo $msg; ?></span>
+										<?php }?>
 									</p>
 								</div>
 

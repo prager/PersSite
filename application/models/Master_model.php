@@ -179,8 +179,21 @@ class Master_model extends CI_Model {
 			$retval = FALSE;
 		}
 		
+		return $retval;
+	}		
+	
+	public function add_user($param) {
+		$retval = TRUE;
 		
-		
+		if($param['pass1'] == $param['pass2']) {
+			$param['password'] = password_hash($param['pass1'], PASSWORD_BCRYPT, array('cost' => 12));
+			unset($param['pass1']);
+			unset($param['pass2']);
+			$this->db->insert('users', $param);
+		}
+		else {
+			$retval = FALSE;
+		}
 		return $retval;
 	}
 	

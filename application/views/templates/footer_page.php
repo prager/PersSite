@@ -11,17 +11,17 @@
 							<div class='col-xs-6 text-right' >
 								<ul class='footer-social' >
 									<li>
-										<a href='#' >
+										<a href='https://www.facebook.com/jkulisek' >
 											<i class='ion-social-facebook' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
+										<a href='https://plus.google.com/102144146559622259709' >
 											<i class='ion-social-googleplus' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
+										<a href='https://www.linkedin.com/in/jan-kul%C3%ADsek-13066b44' >
 											<i class='ion-social-linkedin' ></i>
 										</a>
 									</li>

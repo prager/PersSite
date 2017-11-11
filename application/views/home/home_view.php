@@ -61,16 +61,17 @@
 							</li>
 							<li>
 								<a href='#' data-section='portfolio' >Portfolio</a>
-							</li> -->
-							<li>
-								<a href='#' data-section='blog' >My Blog</a>
 							</li>
 							<li>
 								<a href='#' data-section='contact' >Contact</a>
 							</li>
+							 -->
 							<li>
-								<!-- <a href="#" data-section='login' >Login</a> -->	
-								<a href="<?php echo base_url() ;?>index.php/home/login">Login</a>							
+								<a href='#' data-section='blog' >My Blog</a>
+							</li>
+							<li>
+								<a href="#" data-section='login' >Login</a> 
+								<!-- <a href="<?php echo base_url() ;?>index.php/home/login">Login</a>	-->							
 								<?php //anchor('home/login', 'Login'); ?>
 							</li>
 						</ul>
@@ -93,7 +94,7 @@
 				<div class='basic-info section-block' >
 					<div class='container' >
 						<div class='section-header text-center' >
-							<h2>Basic Info About Me</h2>
+							<h2>My Short Bio</h2>
 							<!--divider-->
 							<div class='divider-draft center' ></div>
 							<!--/divider-->
@@ -146,7 +147,7 @@
 						</div>
 					</div>
 				</div>
-				<div class='about-icons section-block' >
+				<!-- <div class='about-icons section-block' >
 					<div class='container' >
 						<div class='row' >
 							<div class='col-md-3' >
@@ -255,7 +256,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<div class='footer bg-lightgray section-block' >
 					<div class='container' >
 						<div class='row' >
@@ -265,23 +266,18 @@
 							<div class='col-xs-6 text-right' >
 								<ul class='footer-social' >
 									<li>
-										<a href='#' >
+										<a href='https://www.facebook.com/jkulisek' >
 											<i class='ion-social-facebook' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-twitter' ></i>
+										<a href='https://plus.google.com/102144146559622259709' >
+											<i class='ion-social-googleplus' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-pinterest' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-dribbble' ></i>
+										<a href='https://www.linkedin.com/in/jan-kul%C3%ADsek-13066b44' >
+											<i class='ion-social-linkedin' ></i>
 										</a>
 									</li>
 								</ul>
@@ -593,23 +589,18 @@
 							<div class='col-xs-6 text-right' >
 								<ul class='footer-social' >
 									<li>
-										<a href='#' >
+										<a href='https://www.facebook.com/jkulisek' >
 											<i class='ion-social-facebook' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-twitter' ></i>
+										<a href='https://plus.google.com/102144146559622259709' >
+											<i class='ion-social-googleplus' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-pinterest' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-dribbble' ></i>
+										<a href='https://www.linkedin.com/in/jan-kul%C3%ADsek-13066b44' >
+											<i class='ion-social-linkedin' ></i>
 										</a>
 									</li>
 								</ul>
@@ -1143,23 +1134,18 @@
 							<div class='col-xs-6 text-right' >
 								<ul class='footer-social' >
 									<li>
-										<a href='#' >
+										<a href='https://www.facebook.com/jkulisek' >
 											<i class='ion-social-facebook' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-twitter' ></i>
+										<a href='https://plus.google.com/102144146559622259709' >
+											<i class='ion-social-googleplus' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-pinterest' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-dribbble' ></i>
+										<a href='https://www.linkedin.com/in/jan-kul%C3%ADsek-13066b44' >
+											<i class='ion-social-linkedin' ></i>
 										</a>
 									</li>
 								</ul>
@@ -1563,23 +1549,18 @@
 							<div class='col-xs-6 text-right' >
 								<ul class='footer-social' >
 									<li>
-										<a href='#' >
+										<a href='https://www.facebook.com/jkulisek' >
 											<i class='ion-social-facebook' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-twitter' ></i>
+										<a href='https://plus.google.com/102144146559622259709' >
+											<i class='ion-social-googleplus' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-pinterest' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-dribbble' ></i>
+										<a href='https://www.linkedin.com/in/jan-kul%C3%ADsek-13066b44' >
+											<i class='ion-social-linkedin' ></i>
 										</a>
 									</li>
 								</ul>
@@ -1992,23 +1973,18 @@
 							<div class='col-xs-6 text-right' >
 								<ul class='footer-social' >
 									<li>
-										<a href='#' >
+										<a href='https://www.facebook.com/jkulisek' >
 											<i class='ion-social-facebook' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-twitter' ></i>
+										<a href='https://plus.google.com/102144146559622259709' >
+											<i class='ion-social-googleplus' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-pinterest' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-dribbble' ></i>
+										<a href='https://www.linkedin.com/in/jan-kul%C3%ADsek-13066b44' >
+											<i class='ion-social-linkedin' ></i>
 										</a>
 									</li>
 								</ul>
@@ -2132,23 +2108,18 @@
 							<div class='col-xs-6 text-right' >
 								<ul class='footer-social' >
 									<li>
-										<a href='#' >
+										<a href='https://www.facebook.com/jkulisek' >
 											<i class='ion-social-facebook' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-twitter' ></i>
+										<a href='https://plus.google.com/102144146559622259709' >
+											<i class='ion-social-googleplus' ></i>
 										</a>
 									</li>
 									<li>
-										<a href='#' >
-											<i class='ion-social-pinterest' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-dribbble' ></i>
+										<a href='https://www.linkedin.com/in/jan-kul%C3%ADsek-13066b44' >
+											<i class='ion-social-linkedin' ></i>
 										</a>
 									</li>
 								</ul>
@@ -2166,8 +2137,115 @@
 			<!--=============================================================================
 				/Contact Section
 			===============================================================================-->
+			
+			<!--=============================================================================
+				Login Section
+			===============================================================================-->
+			<section id='login' class='contact-section section' >
+
+				<div class='contact-block section-block' >
+					<div class='container' >
+						<div class='row' >
+							<div class='col-md-6 col-md-offset-3' >
+
+								<div class='section-header text-center' >
+									<h2 class='animate text-over-block' >Login</h2>
+									<!--divider-->
+									<div class='divider-draft center' ></div>
+									<!--/divider-->
+									<p>Please, enter your Login ID and Password</p>
+								</div>
+
+							</div>
+						</div>
+
+						<div class='row' >
+							<div class='col-md-8 col-md-offset-2' >
+
+								<?php echo form_open('login', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>								
+								<!-- <form class='contact-form' action='mail.php' method='post' data-toggle='validator' > -->
+
+									<div id='contact-form-result' ></div>
+
+									<div class='row' >
+
+										<div class='col-md-6 col-md-offset-3' >
+											<div class='form-group' >
+												<input type='text' class='form-control' id='user' name='user' placeholder='Username' required>
+												<div class='help-block with-errors' ></div>
+
+											</div>
+										</div>
+
+									</div>
+
+									<div class='row' >
+
+										<div class='col-md-3' >&nbsp;</div>
+
+										<div class='col-md-6' >
+											<div class='form-group' >
+												<input type='password' class='form-control' id='pass' name='pass' placeholder='password' required>
+												<div class='help-block with-errors' ></div>
+
+											</div>
+										</div>
+
+									</div>
+									<div class='row' >&nbsp;</div>
+									<div class='form-group text-center' >
+										<button type='submit' class='symp-btn' >Login</button>
+									</div>
+
+								<!--  </form>-->
+								<?php echo form_close(); ?>
+							</div>
+						</div>
 
 
+					</div>
+				</div>
+				
+				<div class='footer bg-lightgray section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-xs-6 text-left' >
+								<h4>Jan Kulisek</h4>
+							</div>
+
+							<div class='col-xs-6 text-right' >
+								<ul class='footer-social' >
+									<li>
+										<a href='https://www.facebook.com/jkulisek' >
+											<i class='ion-social-facebook' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='https://plus.google.com/102144146559622259709' >
+											<i class='ion-social-googleplus' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='https://www.linkedin.com/in/jan-kul%C3%ADsek-13066b44' >
+											<i class='ion-social-linkedin' ></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+			</section>
+				
 			<!--close button-->
 			<div class='close-btn' >
 				<span></span>
