@@ -62,10 +62,10 @@
 							<li>
 								<a href='#' data-section='portfolio' >Portfolio</a>
 							</li>
+							 -->
 							<li>
 								<a href='#' data-section='contact' >Contact</a>
 							</li>
-							 -->
 							<li>
 								<a href='#' data-section='blog' >My Blog</a>
 							</li>
@@ -2039,7 +2039,7 @@
 										<div class='col-md-6' >
 
 											<div class='form-group' >
-												<input type='text' class='form-control' placeholder='Name' required>
+												<input type='text' id='name' name='name' class='form-control' placeholder='Name' required>
 
 												<div class='help-block with-errors' ></div>
 											</div>
@@ -2048,7 +2048,7 @@
 
 										<div class='col-md-6' >
 											<div class='form-group' >
-												<input type='email' class='form-control' placeholder='Email' required>
+												<input type='email' id='email' name='email' class='form-control' placeholder='Email' required>
 
 												<div class='help-block with-errors' ></div>
 
@@ -2061,7 +2061,7 @@
 
 										<div class='col-md-6' >
 											<div class='form-group' >
-												<input type='text' class='form-control' placeholder='Phone' required>
+												<input type='text' id='subj' name='subj' class='form-control' placeholder='Subject' required>
 												<div class='help-block with-errors' ></div>
 
 											</div>
@@ -2069,7 +2069,7 @@
 
 										<div class='col-md-6' >
 											<div class='form-group' >
-												<input type='text' class='form-control' placeholder='Website' required>
+												<input type='text' id='web' name='web' class='form-control' placeholder='Website (enter "none" if no website)' required>
 												<div class='help-block with-errors' ></div>
 
 											</div>
@@ -2078,7 +2078,7 @@
 									</div>
 
 									<div class='form-group' >
-										<textarea rows='5' class='form-control' placeholder='Message' required></textarea>
+										<textarea rows='5' id='msg' name='msg' class='form-control' placeholder='Message' required></textarea>
 										<div class='help-block with-errors' ></div>
 									</div>
 

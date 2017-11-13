@@ -975,7 +975,8 @@ class CI_Email {
 	 * @return	string
 	 */
 	protected function _set_date()
-	{
+	{	
+		date_default_timezone_set("America/Los_Angeles");
 		$timezone = date('Z');
 		$operator = ($timezone[0] === '-') ? '-' : '+';
 		$timezone = abs($timezone);

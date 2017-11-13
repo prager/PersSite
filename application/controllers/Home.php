@@ -37,4 +37,21 @@ class Home extends CI_Controller {
 		$this->load->view('home/login_view', $data);
 		$this->load->view('templates/footer_page');
 	}
+	
+	public function msg() {
+		$param['name'] = $this->input->post('name');
+		$param['subj'] = $this->input->post('subj');
+		$param['web'] = $this->input->post('web');
+		$param['email'] = $this->input->post('email');
+		$param['msg'] = $this->input->post('msg');
+		
+		$this->load->view('templates/header_page');
+		
+		$msg = $this->Home_model->send_msg($param);
+		
+		$data['msg'] = '<p style="color: red">' . $msg . '</p>';
+		
+		$this->load->view('home/status_view', $data);
+		$this->load->view('templates/footer_page');
+	}
 }

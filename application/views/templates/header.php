@@ -9,7 +9,7 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 
-		<title>V Card Jan Kulisek</title>
+		<title>Jan Kulisek</title>
 
 		<!--[if lt IE 9]>
 		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
