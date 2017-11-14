@@ -398,7 +398,7 @@
 									<p>
 									Software engineer during 2000-2002 and electronic<br>
 									technician during 1997-2000. Developed instrument testing<br>
-									software inVisual Basic and C.
+									software in Visual Basic and C.
 									</p>
 
 								</div>
