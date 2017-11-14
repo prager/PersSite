@@ -2171,7 +2171,7 @@
 
 										<div class='col-md-6 col-md-offset-3' >
 											<div class='form-group' >
-												<input type='text' class='form-control' id='user' name='user' placeholder='Username' required>
+												<input type='text' class='form-control' id='username' name='username' placeholder='Username' required>
 												<div class='help-block with-errors' ></div>
 
 											</div>

@@ -10,7 +10,7 @@ class Login extends CI_Controller {
 	
 	public function index() {
 		$param['pass'] = $this->input->post('pass');
-		$param['user'] = $this->input->post('user');
+		$param['user'] = $this->input->post('username');
 		$this->load->view('templates/header_page');
 		if ($this->Login_model->validate_user($param)) {
 			$data = NULL;

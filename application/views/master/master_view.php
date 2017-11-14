@@ -50,7 +50,7 @@
 						<div class='row' >
 							<div class='col-md-8 col-md-offset-2' >
 
-								<?php echo form_open('login', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>								
+								<?php echo form_open('master/set_user', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>								
 								<!-- <form class='contact-form' action='mail.php' method='post' data-toggle='validator' > -->
 
 									<div id='contact-form-result' ></div>
@@ -67,7 +67,7 @@
 
 										<div class='col-md-3' >
 											<div class='form-group' >
-												<input type='password' class='form-control' id='pass' name='pass' placeholder='password' required>
+												<input type='password' class='form-control' id='pass1' name='pass1' placeholder='password' required>
 												<div class='help-block with-errors' ></div>
 
 											</div>
@@ -75,7 +75,7 @@
 
 										<div class='col-md-3' >
 											<div class='form-group' >
-												<input type='password' class='form-control' id='pass' name='pass' placeholder='password' required>
+												<input type='password' class='form-control' id='pass2' name='pass2' placeholder='confirm password' required>
 												<div class='help-block with-errors' ></div>
 
 											</div>

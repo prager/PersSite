@@ -160,7 +160,7 @@ class Master_model extends CI_Model {
 		
 		if($param['pass1'] == $param['pass2']) {
 			$setarr['password'] = password_hash($param['pass1'], PASSWORD_BCRYPT, array('cost' => 12));
-			$setarr['username'] = $param['user_name'];
+			$setarr['username'] = $param['username'];
 			$setarr['email'] = $param['email'];
 			if($param['phone'] != '') {
 				$setarr['phone'] = $param['phone'];
@@ -169,11 +169,12 @@ class Master_model extends CI_Model {
 				$setarr['phone'] = '000-000-0000';
 			}
 			
+			$this->db->insert('users', $setarr);
+			
 			if (session_status() !== PHP_SESSION_ACTIVE) {
 				session_start();
 				session_regenerate_id(FALSE);
 			}
-			
 		}
 		else {
 			$retval = FALSE;
