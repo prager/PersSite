@@ -66,4 +66,25 @@ class Login_model extends CI_Model {
 		return $retval;
 	}
 	
+	public function logout() {
+		if (session_status() !== PHP_SESSION_ACTIVE) {
+			session_start();
+		}
+		
+		if(isset($_SESSION['logged'])) {
+			//$this->db->where('logged', 1);
+			//$this->db->where('id_user',  $_SESSION['id_user']);
+			//$this->db->update('ci_sessions', array('logged' => 0, 'date_logged_out' => time()));
+			
+			unset($_SESSION['logged']);
+			//unset($_SESSION['level']);
+			//unset($_SESSION['id_user']);
+			//unset($_SESSION['user']);
+			//unset($_SESSION['user_type']);
+		}
+		
+		session_regenerate_id(FALSE);
+		session_destroy();
+	}
+	
 }

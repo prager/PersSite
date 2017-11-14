@@ -35,4 +35,12 @@ class Master extends CI_Controller {
 		$this->load->view('home/login_view', $data);
 		$this->load->view('templates/footer_page');
 	}
+	
+	public function logout() {
+		$this->Login_model->logout();
+		$this->load->view('templates/header_page');
+		$data['msg'] = '<br>Logged out! Thank you!<br>';
+		$this->load->view('home/login_view', $data);
+		$this->load->view('templates/footer_page');
+	}
 }

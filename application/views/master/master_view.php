@@ -28,7 +28,7 @@
 									<div class='divider-draft center' ></div>
 									<!--/divider-->
 									<p>
-										This is the master page.
+										This is the master page (<?php echo anchor('master/logout', 'click here to logout'); ?>).
 									</p>
 								</div>
 							</div>
