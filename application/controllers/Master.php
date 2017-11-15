@@ -18,7 +18,7 @@ class Master extends CI_Controller {
 			$data['msg'] = '<br>You have to be logged in to access this page. Please, login. Thank you<br><br>';
 			$this->load->view('home/login_view', $data);
 		}
-		$this->load->view('templates/footer_page');
+		$this->load->view('templates/footer');
 	}
 	
 	public function set_user() {

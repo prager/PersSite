@@ -15,6 +15,7 @@ class Login_model extends CI_Model {
 		
 		if(isset($_SESSION['logged'])) {
 			$retval = $_SESSION['logged'];
+			$retval = TRUE;
 		}
 		
 		return $retval;
@@ -22,31 +23,36 @@ class Login_model extends CI_Model {
 	
 	public function validate_user($param) {
 		$retval = FALSE;		
-		
-		$this->db->select('username');
-		$this->db->where('username', $param['user']);
-		//echo '<br><br>user: ' . $param['user'];
-		if(count($this->db->get('users')->row()) == 1) {
-			$this->db->select('password');
+		if(!$this->is_logged()) {
+			$this->db->select('username');
 			$this->db->where('username', $param['user']);
-			$pass = $this->db->get('users')->row()->password;
-			if(password_verify($param['pass'], $pass)) {
-				$retval = TRUE;
-				
-				if (session_status() !== PHP_SESSION_ACTIVE) {
-					session_start();
-					session_regenerate_id(FALSE);
+			//echo '<br><br>user: ' . $param['user'];
+			if(count($this->db->get('users')->row()) == 1) {
+				$this->db->select('password');
+				$this->db->where('username', $param['user']);
+				$pass = $this->db->get('users')->row()->password;
+				if(password_verify($param['pass'], $pass)) {
+					$retval = TRUE;
+					
+					if (session_status() !== PHP_SESSION_ACTIVE) {
+						session_start();
+						session_regenerate_id(FALSE);
+					}
+					$date = time();	
+					
+					$_SESSION['logged'] = TRUE;
+					$_SESSION['date'] = $date;
+					
+					$this->db->select_max('id_sessions');
+					$max = $this->db->get('sessions')->row()->id_sessions;
+					$this->db->where('id_sessions', $max);
+					$this->db->update('sessions', array('logged' => 1, 'date' => $date));
 				}
-				
-				$_SESSION['logged'] = TRUE;
-				
-				$this->db->select_max('id_sessions');
-				$max = $this->db->get('sessions')->row()->id_sessions;
-				$this->db->where('id_sessions', $max);
-				$this->db->update('sessions', array('logged' => 1, 'date' => time()));
-			}
-		}	
-		
+			}	
+		}
+		else {
+			$retval = TRUE;
+		}
 		return $retval;
 	}
 	
@@ -71,16 +77,12 @@ class Login_model extends CI_Model {
 			session_start();
 		}
 		
+		$this->db->where('date', $_SESSION['date']);
+		$this->db->update('sessions', array('logged' => 0));
+		
 		if(isset($_SESSION['logged'])) {
-			//$this->db->where('logged', 1);
-			//$this->db->where('id_user',  $_SESSION['id_user']);
-			//$this->db->update('ci_sessions', array('logged' => 0, 'date_logged_out' => time()));
-			
 			unset($_SESSION['logged']);
-			//unset($_SESSION['level']);
-			//unset($_SESSION['id_user']);
-			//unset($_SESSION['user']);
-			//unset($_SESSION['user_type']);
+			unset($_SESSION['date']);
 		}
 		
 		session_regenerate_id(FALSE);

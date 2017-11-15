@@ -11,7 +11,7 @@ class Login extends CI_Controller {
 	public function index() {
 		$param['pass'] = $this->input->post('pass');
 		$param['user'] = $this->input->post('username');
-		$this->load->view('templates/header_page');
+		$this->load->view('templates/header');
 		if ($this->Login_model->validate_user($param)) {
 			$data = NULL;
 			$this->load->view('master/master_view', $data);
@@ -20,6 +20,6 @@ class Login extends CI_Controller {
 			$data['msg'] = '<br>Login Error! Please, enter valid Login ID and Password<br><br>';
 			$this->load->view('home/login_view', $data);
 		}
-		$this->load->view('templates/footer_page');
+		$this->load->view('templates/footer');
 	}
 }
