@@ -78,7 +78,7 @@
 					</nav>
 					<div class='front-heading text-center' >
 						<h2>
-							Jan Kulisek
+							Jan Kul&iacute;sek
 						</h2>
 					</div>
 				</div>
@@ -108,7 +108,11 @@
 							</div>
 							<div class='col-md-8 about-info' >
 								<p>
-								Please, be patient, my bio is coming soon. I am building my profile at this time. Feel free to come back for updates any time.	
+								Please, be patient, my bio is coming soon. Feel free to come back to check for updates any time.</p>
+								
+								<p> If interested, I told some of my personal story during my first experiment
+								with <a href="https://getbootstrap.com/">Bootstrap</a> framework here: <a href="http://story.kulisek.org">
+								http://story.kulisek.org</a>
 								</p>
 
 								<div class='clearfix' ></div>
@@ -119,7 +123,7 @@
 									<li>
 										<div class='inner' >
 											<h4>Name</h4>
-											<p>Jan Kulisek</p>
+											<p>Jan Kul&iacute;sek</p>
 										</div>
 									</li>
 									<li>
@@ -261,7 +265,7 @@
 					<div class='container' >
 						<div class='row' >
 							<div class='col-xs-6 text-left' >
-								<h4>Jan Kulisek</h4>
+								<h4>Jan Kul&iacute;sek</h4>
 							</div>
 							<div class='col-xs-6 text-right' >
 								<ul class='footer-social' >
@@ -583,7 +587,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Jan Kulisek</h4>
+								<h4>Jan Kul&iacute;sek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
@@ -1128,7 +1132,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Jan Kulisek</h4>
+								<h4>Jan Kul&iacute;sek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
@@ -1543,7 +1547,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Jan Kulisek</h4>
+								<h4>Jan Kul&iacute;sek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
@@ -1635,7 +1639,7 @@
 
 											<li>
 												<i class='ion-ios-person' ></i>
-												<span>Jan Kulisek</span>
+												<span>Jan Kul&iacute;sek</span>
 											</li>
 
 											<li>
@@ -1683,7 +1687,7 @@
 
 											<li>
 												<i class='ion-ios-person' ></i>
-												<span>Jan Kulisek</span>
+												<span>Jan Kul&iacute;sek</span>
 											</li>
 
 											<li>
@@ -1731,7 +1735,7 @@
 
 											<li>
 												<i class='ion-ios-person' ></i>
-												<span>Jan Kulisek</span>
+												<span>Jan Kul&iacute;sek</span>
 											</li>
 
 											<li>
@@ -1967,7 +1971,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Jan Kulisek</h4>
+								<h4>Jan Kul&iacute;sek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
@@ -2102,7 +2106,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Jan Kulisek</h4>
+								<h4>Jan Kul&iacute;sek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
@@ -2213,7 +2217,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Jan Kulisek</h4>
+								<h4>Jan Kul&iacute;sek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >

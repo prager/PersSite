@@ -5,7 +5,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Jan Kulisek</h4>
+								<h4>Jan Kul&iacute;sek</h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
