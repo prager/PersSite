@@ -6,6 +6,7 @@ class Home extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 		date_default_timezone_set("America/Los_Angeles");
+		//redirect('https://kulisek.org');
 	}
 	
 	public function index() {

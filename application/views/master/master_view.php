@@ -67,6 +67,9 @@
 								<a href='#' data-section='addBlog' >Add Blog</a>
 							</li>
 							<li>
+								<a href='#' data-section='blog' >Blog</a>
+							</li>
+							<li>
 								<a href='master/logout' >Logout</a>
 							</li>
 							<li>
@@ -1587,25 +1590,29 @@
 					<div class='row' >
 
 						<div class='col-md-6 col-md-offset-3' >
-							<div class='section-header text-center' >
+						<div class='section-header text-center' >
 
 								<h2>My Blog</h2>
 
-								<!--divider-->
+								
 								<div class='divider-draft center' ></div>
-								<!--/divider-->
+								
 
 								<p>
-									This is my blog where my future thoughts will live. Currently under development. Please, be patient and come back soon.
+									This is my blog where my future thoughts will live. Currently under development.<br> 
+									Please, be patient and come back soon.
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class='row' >&nbsp;</div>
-				<div class='row' >&nbsp;</div>
-				<div class='row' >&nbsp;</div>
-				<div class='row' >&nbsp;</div>
+				
+				<div class='container' >
+					<div class='row' >&nbsp;</div>
+					<div class='row' >&nbsp;</div>
+					<div class='row' >&nbsp;</div>
+					<div class='row' >&nbsp;</div>
+				</div>
 <!-- 
 				<div class='posts-block section-block' >
 
@@ -2027,7 +2034,7 @@
 
 						<div class='row' >
 							<div class='col-md-8 col-md-offset-2' >
-								<?php echo form_open('home/msg', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>
+								<?php echo form_open('master/blog', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>
 								<!-- <form id='contact' name='contact' class='contact-form' action='mail.php' method='post' data-toggle='validator' > -->
 
 									<div id='contact-form-result' ></div>
@@ -2035,53 +2042,30 @@
 									<div class='row' >
 
 										<div class='col-md-6' >
-
 											<div class='form-group' >
-												<input type='text' id='name' name='name' class='form-control' placeholder='Name' required>
-
+												<input type='text' id='title' name='title' class='form-control' placeholder='Title' required>
 												<div class='help-block with-errors' ></div>
+
 											</div>
-
 										</div>
-
+									
 										<div class='col-md-6' >
 											<div class='form-group' >
-												<input type='email' id='email' name='email' class='form-control' placeholder='Email' required>
-
+												<!-- <input type='text' id='title' name='title' class='form-control' placeholder='Title' required>-->
+												<?php echo form_dropdown('subj', $this->arr_lib->subjects(), '0', 'class="form-control"'); ?>
 												<div class='help-block with-errors' ></div>
 
 											</div>
 										</div>
-
-									</div>
-
-									<div class='row' >
-
-										<div class='col-md-6' >
-											<div class='form-group' >
-												<input type='text' id='subj' name='subj' class='form-control' placeholder='Subject' required>
-												<div class='help-block with-errors' ></div>
-
-											</div>
-										</div>
-
-										<div class='col-md-6' >
-											<div class='form-group' >
-												<input type='text' id='web' name='web' class='form-control' placeholder='Website (enter "none" if no website)' required>
-												<div class='help-block with-errors' ></div>
-
-											</div>
-										</div>
-
 									</div>
 
 									<div class='form-group' >
-										<textarea rows='5' id='msg' name='msg' class='form-control' placeholder='Message' required></textarea>
+										<textarea rows='10' id='article' name='article' class='form-control' placeholder='Text' required></textarea>
 										<div class='help-block with-errors' ></div>
 									</div>
 
 									<div class='form-group text-center' >
-										<button type='submit' class='symp-btn' >Send Message</button>
+										<button type='submit' class='symp-btn' >Submit</button>
 									</div>
 								<?php echo form_close(); ?>
 								<!-- </form> -->

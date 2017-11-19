@@ -43,4 +43,9 @@ class Master extends CI_Controller {
 		$this->load->view('home/login_view', $data);
 		$this->load->view('templates/footer_page');
 	}
+	
+	public function blog() {
+		
+		
+	}
 }

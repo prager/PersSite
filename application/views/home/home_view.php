@@ -1608,10 +1608,13 @@
 						</div>
 					</div>
 				</div>
-				<div class='row' >&nbsp;</div>
-				<div class='row' >&nbsp;</div>
-				<div class='row' >&nbsp;</div>
-				<div class='row' >&nbsp;</div>
+				
+				<div class='container' >
+					<div class='row' >&nbsp;</div>
+					<div class='row' >&nbsp;</div>
+					<div class='row' >&nbsp;</div>
+					<div class='row' >&nbsp;</div>
+				</div>
 <!-- 
 				<div class='posts-block section-block' >
 
