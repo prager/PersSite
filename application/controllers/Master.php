@@ -38,14 +38,28 @@ class Master extends CI_Controller {
 	
 	public function logout() {
 		$this->Login_model->logout();
-		$this->load->view('templates/header_page');
-		$data['msg'] = '<br>Logged out! Thank you!<br>';
-		$this->load->view('home/login_view', $data);
-		$this->load->view('templates/footer_page');
+		redirect(base_url());
+		//$this->load->view('templates/header_page');
+		//$data['msg'] = '<br>Logged out! Thank you!<br>';
+		//$data=NULL;
+		//$this->load->view('home/home_view', $data);
+		//$this->load->view('templates/footer_page');
 	}
 	
 	public function blog() {
-		
-		
+		$this->load->view('templates/header_page');
+		if($this->Login_model->is_logged()) {
+			$param['title'] = $this->input->post('title');
+			$param['subject'] = $this->input->post('subj');
+			$param['text'] = $this->input->post('article');
+			$this->Master_model->save_blog($param);
+			$data = NULL;
+			$this->load->view('master/master_view', $data);
+		}
+		else {
+			$data['msg'] = '<br>You have to be logged in to access this page. Please, login. Thank you<br><br>';
+			$this->load->view('home/login_view', $data);
+		}
+		$this->load->view('templates/footer_page');		
 	}
 }

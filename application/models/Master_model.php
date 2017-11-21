@@ -202,4 +202,11 @@ class Master_model extends CI_Model {
 		$this->db->where('id_user', $id);
 		$this->db->delete('user_tbl');
 	}
+	
+	public function save_blog($param) {
+		$param['date'] = time();
+		$param['id_user'] = $_SESSION['id_user'];
+		
+		$this->db->insert('blog', $param);
+	}
 }

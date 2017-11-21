@@ -70,7 +70,7 @@
 								<a href='#' data-section='blog' >Blog</a>
 							</li>
 							<li>
-								<a href='master/logout' >Logout</a>
+								<a href='logout'>Logout</a>
 							</li>
 							<li>
 								<a href="#" data-section='addUser' >Add User</a> 	

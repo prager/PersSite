@@ -21,6 +21,6 @@ class Login extends CI_Controller {
 			$data['msg'] = '<br>Login Error! Please, enter valid Login ID and Password<br><br>';
 			$this->load->view('home/login_view', $data);
 		}
-		$this->load->view('templates/footer');
+		$this->load->view('templates/footer_page');
 	}
 }

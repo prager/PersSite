@@ -42,11 +42,15 @@ class Login_model extends CI_Model {
 					
 					$_SESSION['logged'] = TRUE;
 					$_SESSION['date'] = $date;
+					$_SESSION['username'] = $param['user'];
 					
-					$this->db->select_max('id_sessions');
-					$max = $this->db->get('sessions')->row()->id_sessions;
-					$this->db->where('id_sessions', $max);
-					$this->db->update('sessions', array('logged' => 1, 'date' => $date));
+					$this->db->select('id_users');
+					$this->db->where('username', $param['user']);
+					
+					$_SESSION['id_user'] = $this->db->get('users')->row()->id_users;
+					
+					$this->db->where('id', session_id());
+					$this->db->update('sessions', array('logged' => 1, 'date' => $date, 'id_user' => $_SESSION['id_user']));
 				}
 			}	
 		}
@@ -77,13 +81,13 @@ class Login_model extends CI_Model {
 			session_start();
 		}
 		
-		$this->db->where('date', $_SESSION['date']);
+		$this->db->where('id', session_id());
 		$this->db->update('sessions', array('logged' => 0));
 		
-		if(isset($_SESSION['logged'])) {
+		//if(isset($_SESSION['logged'])) {
 			unset($_SESSION['logged']);
 			unset($_SESSION['date']);
-		}
+		//}
 		
 		session_regenerate_id(FALSE);
 		session_destroy();

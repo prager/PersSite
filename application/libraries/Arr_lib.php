@@ -10,5 +10,9 @@ class Arr_lib {
 				'bus' => 'Business'
 		);
 	}
+	
+	public function get_subject($key) {
+		return $this->subjects()[$key];
+	}
 }
 

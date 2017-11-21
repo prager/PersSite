@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 18, 2017 at 09:53 
+-- Generation Time: Nov 21, 2017 at 02:13 
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -49,6 +49,46 @@ INSERT INTO `about` (`id_about`, `fname`, `lname`, `title`, `title1`, `title2`, 
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `blog`
+--
+
+DROP TABLE IF EXISTS `blog`;
+CREATE TABLE `blog` (
+  `id_blog` int(11) NOT NULL,
+  `date` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `title` varchar(512) COLLATE utf8_bin NOT NULL,
+  `subject` varchar(128) COLLATE utf8_bin NOT NULL,
+  `text` text COLLATE utf8_bin NOT NULL,
+  `img` varchar(512) COLLATE utf8_bin DEFAULT NULL,
+  `published` tinyint(4) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `blog`
+--
+
+INSERT INTO `blog` (`id_blog`, `date`, `id_user`, `title`, `subject`, `text`, `img`, `published`) VALUES
+(1, 1511222097, 3, 'sad', 'warming', 'dasfasf dsf  dfas f dsff asfdasf dsfasf  fdfaafd', NULL, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comments`
+--
+
+DROP TABLE IF EXISTS `comments`;
+CREATE TABLE `comments` (
+  `id_comments` int(11) NOT NULL,
+  `id_blog` int(11) NOT NULL,
+  `date` int(11) NOT NULL,
+  `user` varchar(128) COLLATE utf8_bin NOT NULL,
+  `comment` text COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `messages`
 --
 
@@ -83,35 +123,11 @@ CREATE TABLE `sessions` (
   `ip_address` varchar(45) COLLATE utf8_bin NOT NULL,
   `timestamp` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `data` blob NOT NULL,
-  `user` varchar(32) COLLATE utf8_bin DEFAULT NULL,
+  `id_user` int(11) NOT NULL DEFAULT '0',
   `logged` tinyint(4) NOT NULL DEFAULT '0',
-  `date` int(11) UNSIGNED DEFAULT NULL
+  `date` int(11) UNSIGNED DEFAULT NULL,
+  `blocked` tinyint(4) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin ROW_FORMAT=COMPACT;
-
---
--- Dumping data for table `sessions`
---
-
-INSERT INTO `sessions` (`id_sessions`, `id`, `ip_address`, `timestamp`, `data`, `user`, `logged`, `date`) VALUES
-(26, '7hg0uuplmmr9ve4pepk29ctqnues6314', '::1', 1510727066, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303732373034393b6c6f676765647c623a313b646174657c693a313531303732373036363b, NULL, 0, 1510727066),
-(27, '9f00kik1qpvihqus1vdo69ap5e2kg2ce', '::1', 1510727126, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303732373130393b6c6f676765647c623a313b646174657c693a313531303732373132363b, NULL, 0, 1510727126),
-(28, 's6lbgjtf5or7q8o37ruf0cflt0qajvno', '::1', 1510727136, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303732373133363b, NULL, 0, NULL),
-(29, '1vtir3qi5f08hub7cpd1rhgre1hs0cmf', '::1', 1510728523, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303732383239323b6c6f676765647c623a313b646174657c693a313531303732383239373b, NULL, 0, 1510728297),
-(30, '5v35eb53gu5h5t7k2a1bjkgojobskj28', '::1', 1510728833, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303732383832383b6c6f676765647c623a313b646174657c693a313531303732383239373b, NULL, 0, NULL),
-(31, '2f8p70d1o8k2vescath1nure6tqgp1v1', '::1', 1510729482, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303732393230373b6c6f676765647c623a313b646174657c693a313531303732383239373b, NULL, 0, NULL),
-(32, 'qnm1cl0jg2m35sds1rcemtqhltdq4lkb', '::1', 1510729758, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303732393439333b6c6f676765647c623a313b646174657c693a313531303732393530313b, NULL, 0, 1510729501),
-(33, 'ofoj0nvc9esh78ru14t3q00tg7tf4m40', '::1', 1510729924, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303732393831363b6c6f676765647c623a313b646174657c693a313531303732393530313b, NULL, 0, NULL),
-(34, '07gbi934gdvcfopqi5glsbcpids84fcd', '::1', 1510730183, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303733303138333b6c6f676765647c623a313b646174657c693a313531303732393530313b, NULL, 0, NULL),
-(35, 'bmoeime5vu9hi5rmcairpto2hbqtsgi2', '::1', 1510731155, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303733313134313b, NULL, 0, 1510732051),
-(36, 'tgut35362silgoef3khiul5f50hptl2h', '::1', 1510732051, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303733323035303b6c6f676765647c623a313b646174657c693a313531303733323035313b, NULL, 0, NULL),
-(37, 'jk166fe0taq8jnq5b084plfokk0i3h6t', '::1', 1510732072, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303733323037323b, NULL, 0, 1510766579),
-(38, 'ar988a3rke4nghuktpjvgj7h7derclm6', '::1', 1510766579, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303736363537393b6c6f676765647c623a313b646174657c693a313531303736363537393b, NULL, 0, NULL),
-(39, 'tt6ga6qtmp8mbvij19at9gguvepr4lc2', '::1', 1510766807, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303736363830373b, NULL, 0, NULL),
-(40, '1uohc08n54am6hm5fubam0j1upn9v78f', '::1', 1510770933, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303737303731373b, NULL, 0, NULL),
-(41, 'm8orns6vl37gbs5ap7vcclv7c36pgv7m', '::1', 1510772344, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303737323334343b, NULL, 0, NULL),
-(42, 'sse18nbe84c3hcln7olfprmuaohleb9e', '::1', 1510812519, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531303831323531313b, NULL, 0, NULL),
-(43, '955panf01cp3o8ocnbk31v8k94gkl17r', '::1', 1511038124, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531313033373839323b6c6f676765647c623a313b646174657c693a313531313033383132343b, NULL, 1, 1511038124),
-(44, '7f50suoag8n5s8u311t18k41t7er5fgu', '::1', 1511038354, 0x5f5f63695f6c6173745f726567656e65726174657c693a313531313033383236323b6c6f676765647c623a313b646174657c693a313531313033383132343b, NULL, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -127,15 +143,16 @@ CREATE TABLE `users` (
   `fname` varchar(64) COLLATE utf8_bin NOT NULL,
   `lname` varchar(64) COLLATE utf8_bin NOT NULL,
   `email` varchar(128) COLLATE utf8_bin DEFAULT NULL,
-  `phone` varchar(12) COLLATE utf8_bin NOT NULL
+  `phone` varchar(12) COLLATE utf8_bin NOT NULL,
+  `blocked` tinyint(4) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id_users`, `username`, `password`, `fname`, `lname`, `email`, `phone`) VALUES
-(3, 'master_jk', '$2y$12$8sTFfN5Gh6JKgsgDnNdm5e9h5mi9yZszJOyaQ5Ok0McyzYBqBMHZ2', '', '', 'jan@kulisek.org', '000-111-2222');
+INSERT INTO `users` (`id_users`, `username`, `password`, `fname`, `lname`, `email`, `phone`, `blocked`) VALUES
+(3, 'master_jk', '$2y$12$8sTFfN5Gh6JKgsgDnNdm5e9h5mi9yZszJOyaQ5Ok0McyzYBqBMHZ2', '', '', 'jan@kulisek.org', '000-111-2222', 0);
 
 --
 -- Indexes for dumped tables
@@ -146,6 +163,18 @@ INSERT INTO `users` (`id_users`, `username`, `password`, `fname`, `lname`, `emai
 --
 ALTER TABLE `about`
   ADD PRIMARY KEY (`id_about`);
+
+--
+-- Indexes for table `blog`
+--
+ALTER TABLE `blog`
+  ADD PRIMARY KEY (`id_blog`);
+
+--
+-- Indexes for table `comments`
+--
+ALTER TABLE `comments`
+  ADD PRIMARY KEY (`id_comments`);
 
 --
 -- Indexes for table `messages`
@@ -176,6 +205,16 @@ ALTER TABLE `users`
 ALTER TABLE `about`
   MODIFY `id_about` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT for table `blog`
+--
+ALTER TABLE `blog`
+  MODIFY `id_blog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `comments`
+--
+ALTER TABLE `comments`
+  MODIFY `id_comments` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
@@ -184,7 +223,7 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT for table `sessions`
 --
 ALTER TABLE `sessions`
-  MODIFY `id_sessions` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id_sessions` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 --
 -- AUTO_INCREMENT for table `users`
 --
