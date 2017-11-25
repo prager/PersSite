@@ -70,10 +70,10 @@
 								<a href='#' data-section='blog' >Blog</a>
 							</li>
 							<li>
-								<a href='logout'>Logout</a>
+								<a href="#" data-section='addUser' >Add User</a> 	
 							</li>
 							<li>
-								<a href="#" data-section='addUser' >Add User</a> 	
+								<a href="logout">Logout</a> 	
 							</li>
 						</ul>
 					</nav>
@@ -2117,7 +2117,7 @@
 
 			</section>
 			<!--=============================================================================
-				/Contact Section
+				/Add Blog Section
 			===============================================================================-->
 			
 			<!--=============================================================================
