@@ -13,7 +13,7 @@ class Login extends CI_Controller {
 		$param['user'] = $this->input->post('username');
 		if ($this->Login_model->validate_user($param)) {
 			$this->load->view('templates/header');
-			$data = NULL;
+			$data = $this->Master_model->get_master_data();
 			$this->load->view('master/master_view', $data);
 		}
 		else {

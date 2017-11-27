@@ -5,27 +5,25 @@ class Blog_model extends CI_Model {
 		$this->load->database();
 	}
 	
-	public function get_entries($param) {		
+	public function get_entries($cnt, $offset) {		
 		$retarr = array();
 		$this->db->select('*');
-		$this->db->limit($param['rec_cnt'], $param['rec_offset']);
+		$this->db->limit($cnt, $offset);
 		$entries = $this->db->get('blog')->result();
 		$i = 0;
-		//echo '<br><br>';
-		foreach($entries as $row) {
+		/*foreach($entries as $row) {
 			$author = $this->User_model->get_user_by_id($row->id_user);
 			$retarr[$i]['id_blog'] = $row->id_blog;
 			$retarr[$i]['author'] = $author;
-			$retarr[$i]['headline'] = $row->headline;
-			$snip = $row->entry;
-			//$snip = str_replace("<br>", "&#10;", $snip);
-			//$snip = str_replace("<br />", '\n', $snip);
-			$retarr[$i]['entry'] = $snip;
+			$retarr[$i]['title'] = $row->title;
+			$snip = $row->text;
+			$retarr[$i]['text'] = $snip;
 			$retarr[$i]['date'] = $this->date_lib->set_date($row->date)['short'];
 			$i++;
-		}
+		}*/
 		
-		return $retarr;	
+		//return $retarr;	
+		return $entries;
 	}
 	
 	public function get_entry($id) {
@@ -44,27 +42,19 @@ class Blog_model extends CI_Model {
 		return $retarr;
 	}
 	
-	public function get_partial_entries($param) {
+	public function get_partial_entries($cnt, $offset) {
 		$retarr = array();
 		
-		$entries = $this->get_entries($param['rec_cnt'], $param['rec_offset']);
+		$entries = $this->get_entries($cnt, $offset);
 		
 		foreach ($entries as $row) {
 			$retarr['user'] = $this->User_model->get_user_by_id($row->id_user);
 			$retarr['date'] = $this->date_lib->set_date($row->date)['short'];
 			$retarr['title'] = $row->title;
 			
-			$updated = $row->updated;
+			$retarr['published']= $row->published;
 			
-			if($updated > 0) {
-				$retarr['updated'] = $this->date_lib->set_date($row->updated)['short'];
-			}
-			else {
-				$retarr['updated'] = NULL;
-			}
-			
-			$retarr['updated'] = $row->updated;
-			$snip = $row->entry;
+			$snip = $row->text;
 			$snip = substr($snip, 0, 330);
 			$snip = str_replace("\t", ' ', $snip);
 			$snip = str_replace("\n", ' ', $snip);
@@ -79,16 +69,11 @@ class Blog_model extends CI_Model {
 		return $retarr;
 	}
 	
-	public function save_entry($data, $id) {
-		$data['entry'] = str_replace("\n", '<br>', $data['entry']);
-		$data['date'] = time();
-		if($id == 0) {
-			$this->db->insert('blog', $data);
-		}
-		else {
-			$this->db->where('id_blog', $id);
-			$this->db->update('blog', $data);
-		}
+	public function save_entry($param) {
+		$param['date'] = time();
+		$param['id_user'] = $_SESSION['id_user'];
+		
+		$this->db->insert('blog', $param);
 	}
 	
 	public function delete_entry($id) {

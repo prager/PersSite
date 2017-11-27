@@ -24,14 +24,12 @@ class Login_model extends CI_Model {
 	public function validate_user($param) {
 		$retval = FALSE;		
 		if(!$this->is_logged()) {
-			$this->db->select('username');
+			$this->db->select('username, password');
 			$this->db->where('username', $param['user']);
+			$user_data = $this->db->get('users')->row();
 			//echo '<br><br>user: ' . $param['user'];
-			if(count($this->db->get('users')->row()) == 1) {
-				$this->db->select('password');
-				$this->db->where('username', $param['user']);
-				$pass = $this->db->get('users')->row()->password;
-				if(password_verify($param['pass'], $pass)) {
+			if(count($user_data) == 1) {
+				if(password_verify($param['pass'], $user_data->password)) {
 					$retval = TRUE;
 					
 					if (session_status() !== PHP_SESSION_ACTIVE) {
@@ -42,15 +40,19 @@ class Login_model extends CI_Model {
 					
 					$_SESSION['logged'] = TRUE;
 					$_SESSION['date'] = $date;
-					$_SESSION['username'] = $param['user'];
+					$_SESSION['user']['username'] = $param['user'];
 					
-					$this->db->select('id_users');
+					$this->db->select('*');
 					$this->db->where('username', $param['user']);
 					
-					$_SESSION['id_user'] = $this->db->get('users')->row()->id_users;
+					$user = $this->db->get('users')->row();
+					
+					$_SESSION['user']['id_user'] = $user->id_users;
+					$_SESSION['user']['fname'] = $user->fname;
+					$_SESSION['user']['lname'] = $user->lname;
 					
 					$this->db->where('id', session_id());
-					$this->db->update('sessions', array('logged' => 1, 'date' => $date, 'id_user' => $_SESSION['id_user']));
+					$this->db->update('sessions', array('logged' => 1, 'date' => $date, 'id_user' => $_SESSION['user']['id_user']));
 				}
 			}	
 		}

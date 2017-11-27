@@ -9,9 +9,10 @@ class Master extends CI_Controller {
 	}
 	
 	public function index() {
+		
 		$this->load->view('templates/header_page');
 		if($this->Login_model->is_logged()) {
-			$data = NULL;
+			$data = $this->Master_model->get_master_data();
 			$this->load->view('master/master_view', $data);
 		}
 		else {
@@ -39,20 +40,15 @@ class Master extends CI_Controller {
 	public function logout() {
 		$this->Login_model->logout();
 		redirect(base_url());
-		//$this->load->view('templates/header_page');
-		//$data['msg'] = '<br>Logged out! Thank you!<br>';
-		//$data=NULL;
-		//$this->load->view('home/home_view', $data);
-		//$this->load->view('templates/footer_page');
 	}
 	
-	public function blog() {
+	public function add_blog() {
 		$this->load->view('templates/header_page');
 		if($this->Login_model->is_logged()) {
 			$param['title'] = $this->input->post('title');
 			$param['subject'] = $this->input->post('subj');
 			$param['text'] = $this->input->post('article');
-			$this->Master_model->save_blog($param);
+			$this->Blog_model->save_entry($param);
 			$data = NULL;
 			$this->load->view('master/master_view', $data);
 		}

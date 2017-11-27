@@ -203,10 +203,18 @@ class Master_model extends CI_Model {
 		$this->db->delete('user_tbl');
 	}
 	
-	public function save_blog($param) {
-		$param['date'] = time();
-		$param['id_user'] = $_SESSION['id_user'];
+	public function get_master_data() {
+		$retarr = array();
 		
-		$this->db->insert('blog', $param);
+		if (session_status() !== PHP_SESSION_ACTIVE) {
+			session_start();
+			session_regenerate_id(FALSE);
+		}
+		
+		$retarr['user'] = $_SESSION['user'];
+		
+		$retarr['exerpts'] = $this->Blog_model->get_partial_entries(10, 0);
+		
+		return $retarr;
 	}
 }
