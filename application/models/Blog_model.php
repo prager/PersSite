@@ -46,13 +46,14 @@ class Blog_model extends CI_Model {
 		$retarr = array();
 		
 		$entries = $this->get_entries($cnt, $offset);
-		
+		$i = 0;
 		foreach ($entries as $row) {
-			$retarr['user'] = $this->User_model->get_user_by_id($row->id_user);
-			$retarr['date'] = $this->date_lib->set_date($row->date)['short'];
-			$retarr['title'] = $row->title;
+			$retarr[$i]['fname'] = $this->User_model->get_user_by_id($row->id_user)->fname;
+			$retarr[$i]['lname'] = $this->User_model->get_user_by_id($row->id_user)->lname;
+			$retarr[$i]['date'] = $this->date_lib->set_date($row->date)['short'];
+			$retarr[$i]['title'] = $row->title;
 			
-			$retarr['published']= $row->published;
+			$retarr[$i]['published']= $row->published;
 			
 			$snip = $row->text;
 			$snip = substr($snip, 0, 330);
@@ -63,7 +64,8 @@ class Blog_model extends CI_Model {
 			$snip = str_replace("<br />", ' ', $snip);
 			$snip = preg_replace('/\s+/', ' ', $snip);
 				
-			$retarr['snip'] = $snip;
+			$retarr[$i]['snip'] = $snip;
+			$i++;
 		}
 		
 		return $retarr;

@@ -124,10 +124,11 @@
 								<div class='post' >
 
 									<div class='content' >
-
+									<?php $i = 0;?>
+									<?php foreach($exerpts as $snip) {?>
 										<h4>
 											<a href='post.html' >
-												Simple Post With Image
+												<?php echo $snip['title']; ?>
 											</a>
 										</h4>
 
@@ -135,12 +136,12 @@
 
 											<li>
 												<i class='ion-ios-person' ></i>
-												<span>Jan Kulisek</span>
+												<span><?php echo $snip['fname'] . ' ' . $snip['lname']; ?></span>
 											</li>
 
 											<li>
 												<i class='ion-ios-clock' ></i>
-												<span>14 June 2015</span>
+												<span><?php echo $snip['date']; ?></span>
 											</li>
 
 											<li>
@@ -157,14 +158,17 @@
 										</div>
 										<br>-->
 										<p>
-											Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas tractatos. Sit eu saperet antiopam scripserit. Ei albucius consequuntur sea, no nominavi fabellas phaedrum his....
+											<?php echo $snip['snip']; ?>
 										</p>
 
 										<a href='post.html' class='read-more' >
 											Read More
 											<i class='ion-ios-arrow-thin-right' ></i>
 										</a>
-
+										<hr />
+									<?php
+										$i++;
+									 }?>
 									</div>
 
 								</div>
