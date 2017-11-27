@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 21, 2017 at 02:13 
+-- Generation Time: Nov 27, 2017 at 07:54 
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -69,7 +69,13 @@ CREATE TABLE `blog` (
 --
 
 INSERT INTO `blog` (`id_blog`, `date`, `id_user`, `title`, `subject`, `text`, `img`, `published`) VALUES
-(1, 1511222097, 3, 'sad', 'warming', 'dasfasf dsf  dfas f dsff asfdasf dsfasf  fdfaafd', NULL, 0);
+(1, 1511222097, 3, 'sad', 'warming', 'dasfasf dsf  dfas f dsff asfdasf dsfasf  fdfaafd', NULL, 0),
+(2, 1511759175, 3, 'Test Tech Blog', 'tech', 'Test text test text Test text test text Test text test text Test text test text Test text test text Test text test text Test text test text Test text test text Test text test text ', NULL, 0),
+(3, 1511759404, 3, 'The history text', 'history', 'The history text The history text The history text The history text The history text The history text The history text The history text The history text The history text ', NULL, 0),
+(4, 1511759493, 3, 'The history text', 'history', 'The history text The history text The history text The history text The history text The history text The history text The history text The history text The history text ', NULL, 0),
+(5, 1511759584, 3, 'The history text', 'history', 'The history text The history text The history text The history text The history text The history text The history text The history text The history text The history text ', NULL, 0),
+(6, 1511759618, 3, 'The history text', 'history', 'The history text The history text The history text The history text The history text The history text The history text The history text The history text The history text ', NULL, 0),
+(7, 1511759715, 3, 'The history text', 'history', 'The history text The history text The history text The history text The history text The history text The history text The history text The history text The history text ', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -144,6 +150,7 @@ CREATE TABLE `users` (
   `lname` varchar(64) COLLATE utf8_bin NOT NULL,
   `email` varchar(128) COLLATE utf8_bin DEFAULT NULL,
   `phone` varchar(12) COLLATE utf8_bin NOT NULL,
+  `level` tinyint(4) NOT NULL,
   `blocked` tinyint(4) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -151,8 +158,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id_users`, `username`, `password`, `fname`, `lname`, `email`, `phone`, `blocked`) VALUES
-(3, 'master_jk', '$2y$12$8sTFfN5Gh6JKgsgDnNdm5e9h5mi9yZszJOyaQ5Ok0McyzYBqBMHZ2', '', '', 'jan@kulisek.org', '000-111-2222', 0);
+INSERT INTO `users` (`id_users`, `username`, `password`, `fname`, `lname`, `email`, `phone`, `level`, `blocked`) VALUES
+(3, 'master_jk', '$2y$12$8sTFfN5Gh6JKgsgDnNdm5e9h5mi9yZszJOyaQ5Ok0McyzYBqBMHZ2', 'Jan', 'Kul&iacute;sek', 'jan@kulisek.org', '000-111-2222', 99, 0);
 
 --
 -- Indexes for dumped tables
@@ -208,7 +215,7 @@ ALTER TABLE `about`
 -- AUTO_INCREMENT for table `blog`
 --
 ALTER TABLE `blog`
-  MODIFY `id_blog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_blog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `comments`
 --
@@ -223,7 +230,7 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT for table `sessions`
 --
 ALTER TABLE `sessions`
-  MODIFY `id_sessions` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `id_sessions` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `users`
 --
