@@ -9,6 +9,7 @@ class Blog_model extends CI_Model {
 		$retarr = array();
 		$this->db->select('*');
 		$this->db->limit($cnt, $offset);
+		$this->db->order_by('id_blog', 'DESC');
 		$entries = $this->db->get('blog')->result();
 		$i = 0;
 		/*foreach($entries as $row) {
@@ -26,20 +27,11 @@ class Blog_model extends CI_Model {
 		return $entries;
 	}
 	
-	public function get_entry($id) {
+	public function get_post($id) {
 		$retarr = array();
 		$this->db->select('*');
 		$this->db->where('id_blog', $id);
-		$entry = $this->db->get('blog')->row();
-		$retarr['id_blog'] = $entry->id_blog;
-		$retarr['headline'] = $entry->headline;
-		$snip = $entry->entry;
-		//$snip = str_replace("<br>", '', $snip);
-		//$snip = str_replace("<br />", '', $snip);
-		//preg_replace("/\n/", "", $snip);
-		$retarr['entry'] = $snip;
-		$retarr['op'] = '3/' . $entry->id_blog;
-		return $retarr;
+		return $this->db->get('blog')->row();
 	}
 	
 	public function get_partial_entries($cnt, $offset) {
@@ -50,8 +42,9 @@ class Blog_model extends CI_Model {
 		foreach ($entries as $row) {
 			$retarr[$i]['fname'] = $this->User_model->get_user_by_id($row->id_user)->fname;
 			$retarr[$i]['lname'] = $this->User_model->get_user_by_id($row->id_user)->lname;
-			$retarr[$i]['date'] = $this->date_lib->set_date($row->date)['short'];
+			$retarr[$i]['date'] = $this->date_lib->set_date($row->date)['long'];
 			$retarr[$i]['title'] = $row->title;
+			$retarr[$i]['id_blog'] = $row->id_blog;
 			
 			$retarr[$i]['published']= $row->published;
 			

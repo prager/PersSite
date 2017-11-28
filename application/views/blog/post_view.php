@@ -2,7 +2,7 @@
 		<div id='preloader' >
 		
 			<div class='loader' >
-				<img src='img/load.gif' alt='symp' >
+				<img src='<?php echo base_url() ;?>/assets/img/load.gif' alt='symp' >
 			</div>
 			
 		</div>
@@ -23,7 +23,7 @@
 								<div class='post' >
 									
 									<div class='media' >
-										<img src='img/bg3.jpg' alt='symp' >
+										<img src='<?php echo base_url() ;?>/assets/img/bg3.jpg' alt='symp' >
 									</div>
 									
 									<div class='content' >
@@ -179,65 +179,3 @@
 					</div>
 					
 				</div>
-				
-				
-				<div class='footer bg-lightgray section-block' >
-					
-					<div class='container' >
-						
-						<div class='row' >
-							
-							<div class='col-md-6 text-left' >
-								<h4>Johny Doe</h4>
-							</div>
-							
-							<div class='col-md-6 text-right' >
-								<ul class='footer-social' >
-									<li>
-										<a href='#' >
-											<i class='ion-social-facebook' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-twitter' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-pinterest' ></i>
-										</a>
-									</li>
-									<li>
-										<a href='#' >
-											<i class='ion-social-dribbble' ></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-							
-						</div>
-						
-						
-					</div>
-					
-				</div>
-				
-				
-			</section>
-			
-		</div>
-		
-		<script src='js/jquery.min.js' ></script>
-		<script src='js/jquery.stellar.min.js' ></script>
-		<script src='js/modernizr.js' ></script>
-		<script src='js/owl.carousel.min.js' ></script>
-		<script src='js/jquery.shuffle.min.js' ></script>
-		<script src='js/jquery.magnific-popup.min.js' ></script>
-		<script src='js/validator.min.js' ></script>
-		<script src='js/smoothscroll.js' ></script>
-		<script src='js/script.js' ></script>
-		
-	</body>
-	
-</html>

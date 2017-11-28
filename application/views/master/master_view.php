@@ -144,12 +144,10 @@
 												<span><?php echo $snip['date']; ?></span>
 											</li>
 
-											<li>
+											<!-- <li>
 												<i class='ion-ios-chatbubble' ></i>
 												<span>5</span>
-											</li>
-
-
+											</li> -->
 
 										</ul>
 										
@@ -161,7 +159,7 @@
 											<?php echo $snip['snip']; ?>
 										</p>
 
-										<a href='post.html' class='read-more' >
+										<a href='<?php echo base_url(); ?>index.php/blog/show/<?php echo $snip['id_blog']; ?>' class='read-more' >
 											Read More
 											<i class='ion-ios-arrow-thin-right' ></i>
 										</a>
