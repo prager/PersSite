@@ -14,7 +14,8 @@ class Blog extends CI_Controller {
 	
 	public function show() {
 		$id = $this->uri->segment(3, 0);
-		$data['post'] = $this->Blog_model->get_post($id);
+		$data = $this->Blog_model->get_post($id);
+		
 		$this->load->view('templates/header_page');
 		$this->load->view('blog/post_view', $data);
 		$this->load->view('templates/footer_page');

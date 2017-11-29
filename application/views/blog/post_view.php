@@ -22,15 +22,15 @@
 								
 								<div class='post' >
 									
-									<div class='media' >
+									<!-- <div class='media' >
 										<img src='<?php echo base_url() ;?>/assets/img/bg3.jpg' alt='symp' >
-									</div>
+									</div>-->
 									
 									<div class='content' >
 										
 										<h4>
 											<a href='#' >
-												Simple Post With Image
+												<?php echo $post->title; ?>
 											</a>
 										</h4>
 										
@@ -38,30 +38,23 @@
 											
 											<li>
 												<i class='ion-ios-person' ></i>
-												<span>Johny Doe</span>
+												<span><?php echo $fname . ' ' . $lname?></span>
 											</li>
 											
 											<li>
 												<i class='ion-ios-clock' ></i>
-												<span>14 June 2015</span>
+												<span><?php echo $this->date_lib->set_date($post->date)['long']; ?></span>
 											</li>
 											
-											<li>
+											<!-- <li>
 												<i class='ion-ios-chatbubble' ></i>
 												<span>5</span>
-											</li>
-											
+											</li> -->										
 											
 											
 										</ul>
 										
-										<p>
-											Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas tractatos. Sit eu saperet antiopam scripserit. Ei albucius consequuntur sea, no nominavi fabellas phaedrum his.No dolorem blandit theophrastus eos, nam eu persecuti repudiandae, duo hinc vide aliquip et. Ex atqui voluptatibus eum, cu case intellegebat eum, mea ex regione patrioque signiferumque. Pri ei solet graecis. Ea appetere referrentur vituperatoribus cum, vix sanctus meliore cu. Nec in sale prima nostrud.
-											No dolorem blandit theophrastus eos, nam eu persecuti repudiandae, duo hinc vide aliquip et. Ex atqui voluptatibus eum, cu case intellegebat eum, mea ex regione patrioque signiferumque.
-										</p>
-										<p>
-											No dolorem blandit theophrastus eos, nam eu persecuti repudiandae, duo hinc vide aliquip et. Ex atqui voluptatibus eum, cu case intellegebat eum, mea ex regione patrioque signiferumque. Pri ei solet graecis. Ea appetere referrentur vituperatoribus cum, vix sanctus meliore cu. Nec in sale prima nostrud.
-										</p>
+										<p><?php echo $post->text; ?></p>
 										
 									</div>
 									
@@ -80,7 +73,7 @@
 								<div class='sidebar' >
 									
 									<div class='sidebar-widget' >
-										
+										<br><br>
 										<div class='search-box' >
 											
 											<input type='text' placeholder='Search' class='search-input' >

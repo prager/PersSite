@@ -101,7 +101,7 @@
 						<div class='col-md-6 col-md-offset-3' >
 						<div class='section-header text-center' >
 
-								<h2>My Blog</h2>
+								<h2>K's Blog</h2>
 								
 								<div class='divider-draft center' ></div>
 
@@ -127,9 +127,7 @@
 									<?php $i = 0;?>
 									<?php foreach($exerpts as $snip) {?>
 										<h4>
-											<a href='post.html' >
-												<?php echo $snip['title']; ?>
-											</a>
+											<?php echo anchor('blog/show/' . $snip['id_blog'], $snip['title']); ?>
 										</h4>
 
 										<ul class='post-icons' >
@@ -207,35 +205,18 @@
 											</div>
 
 											<ul class='sidebar-list' >
-
+											<?php foreach($subjects as $sub) { ?>
 												<li>
-													<a href='#' >Web Design</a>
+													<a href='#' ><?php echo $sub;?></a>
 												</li>
-
-												<li>
-													<a href='#' >Travel</a>
-												</li>
-
-												<li>
-													<a href='#' >Life Style</a>
-												</li>
-
-												<li>
-													<a href='#' >Photography</a>
-												</li>
-
-												<li>
-													<a href='#' >Technology</a>
-												</li>
-
-
+											<?php } ?>
 
 											</ul>
 
 										</div>
 									</div>
 
-									<div class='sidebar-widget' >
+									<!-- <div class='sidebar-widget' >
 
 										<div class='widget-header' >
 											<h4>
@@ -246,37 +227,24 @@
 
 
 											<ul class='sidebar-list' >
-
+											<?php $i = 0;?>
+											<?php foreach($exerpts as $snip) {?>
 												<li>
-													<a href='#' >
-														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
-													</a>
+													<?php 
+													if($i < 4) {
+														echo anchor('blog/show/' . $snip['id_blog'], $snip['title']);
+													}
+													else {
+														break;
+													}
+													$i++;
+													?>
 												</li>
-
-												<li>
-													<a href='#' >
-														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
-													</a>
-												</li>
-
-												<li>
-													<a href='#' >
-														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
-													</a>
-												</li>
-
-												<li>
-													<a href='#' >
-														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
-													</a>
-												</li>
-
-
+											<?php } ?>
 
 											</ul>
 
-
-									</div>
+									</div> -->
 
 									<div class='sidebar-widget' >
 										<div class='widget-header' >

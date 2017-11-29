@@ -5,7 +5,7 @@ class Arr_lib {
 		return array(
 				'tech' => 'Technology',
 				'politics' => 'Politics',
-				'warming' => 'Global Warming',
+				'science' => 'Science',
 				'history' => 'History',
 				'bus' => 'Business'
 		);

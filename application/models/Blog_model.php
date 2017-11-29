@@ -31,7 +31,15 @@ class Blog_model extends CI_Model {
 		$retarr = array();
 		$this->db->select('*');
 		$this->db->where('id_blog', $id);
-		return $this->db->get('blog')->row();
+		$post = $this->db->get('blog')->row();
+		$retarr['post'] = $post;
+		
+		$this->db->select('fname, lname');
+		$this->db->where('id_users', $post->id_user);
+		$retarr['fname'] = $this->db->get('users')->row()->fname;
+		$retarr['lname'] = $this->db->get('users')->row()->lname;
+		
+		return $retarr;
 	}
 	
 	public function get_partial_entries($cnt, $offset) {
