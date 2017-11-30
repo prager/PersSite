@@ -62,12 +62,14 @@ class Blog extends CI_Controller {
 			$param['subject'] = $this->input->post('subj');
 			$param['text'] = $this->input->post('article');
 			$this->Blog_model->edit_entry($param, $id);
-			$data = NULL;
+			$data = $this->Master_model->get_master_data();
 			$this->load->view('master/master_view', $data);
 		}
 		else {
 			$data['msg'] = '<br>You have to be logged in to access this page. Please, login. Thank you<br><br>';
 			$this->load->view('home/login_view', $data);
 		}
+		
+		$this->load->view('templates/footer_page');
 	}
 }
