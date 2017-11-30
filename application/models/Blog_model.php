@@ -94,4 +94,10 @@ class Blog_model extends CI_Model {
 		$this->db->like($arr);
 		return $this->db->get('blog')->result();
 	}
+	
+	public function edit_entry($param, $id) {
+		$param['updated'] = time();
+		$this->db->where('id_blog', $id);
+		$this->db->update('blog', $param);
+	}
 }

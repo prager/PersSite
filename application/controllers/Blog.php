@@ -51,4 +51,23 @@ class Blog extends CI_Controller {
 			$this->load->view('templates/footer');
 		}
 	}
+	
+	public function submit_edit() {
+		
+		$this->load->view('templates/header_page');
+		
+		if($this->Login_model->is_logged()) {
+			$id = $this->uri->segment(3, 0);
+			$param['title'] = $this->input->post('title');
+			$param['subject'] = $this->input->post('subj');
+			$param['text'] = $this->input->post('article');
+			$this->Blog_model->edit_entry($param, $id);
+			$data = NULL;
+			$this->load->view('master/master_view', $data);
+		}
+		else {
+			$data['msg'] = '<br>You have to be logged in to access this page. Please, login. Thank you<br><br>';
+			$this->load->view('home/login_view', $data);
+		}
+	}
 }

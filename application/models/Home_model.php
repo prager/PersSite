@@ -10,7 +10,7 @@ class Home_model extends CI_Model {
 	public function send_msg($param) {
 		
 		$recipient = 'jank@jlkconsulting.info';
-		$message = "Name: " . $param['name'] . "\n\n" . "Message:\n\n" . $param['msg'];
+		$message = "Name: " . $param['name'] . "\n\n" . "Email: " .  $param['email'] . "\n\n" . "Message:\n\n" . $param['msg'];
 		
 		//Send mail
 		if(mail($recipient, 'From kulisek.org: ' . $param['subj'], $message)) {

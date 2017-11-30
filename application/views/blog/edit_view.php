@@ -32,7 +32,7 @@
 
 						<div class='row' >
 							<div class='col-md-8 col-md-offset-2' >
-								<?php echo form_open('master/edit_blog', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>
+								<?php echo form_open('blog/submit_edit/' . $post->id_blog, array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>
 								<!-- <form id='contact' name='contact' class='contact-form' action='mail.php' method='post' data-toggle='validator' > -->
 
 									<div id='contact-form-result' ></div>
