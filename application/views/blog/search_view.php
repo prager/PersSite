@@ -60,13 +60,12 @@
 									
 								</div>
 								
-								<?php if($logged) {?>
 								<div class='post-more' >
-									<a href='<?php echo base_url() ;?>index.php/blog/edit_blog/<?php echo $post->id_blog?>' class='more-link' >
-										Edit Post
+									<a href='#' class='more-link' >
+										Next Post
 									</a>
 								</div>
-								<?php }?>
+								
 							</div>
 							
 							<div class='col-md-4' >
@@ -75,7 +74,7 @@
 									
 									<div class='sidebar-widget' >
 										<br><br>
-										<!-- <div class='search-box' >
+										<div class='search-box' >
 											
 											<input type='text' placeholder='Search' class='search-input' >
 											
@@ -83,7 +82,7 @@
 												<i class='ion-ios-search' ></i>
 											</a>
 											
-										</div> -->
+										</div>
 										
 									</div>
 									

@@ -19,43 +19,25 @@
 				<div class='container' >
 					<div class='transition-mask' ></div>
 					<div class='front-person-img' >
-						<!--person's image-->
 						<img src='<?php echo base_url() ;?>/assets/img/me.png' alt='Symp' >
-						<!--/person's image-->
 					</div>
 					<!--person's titles-->
 					<div class='front-person-titles' >
-
-						<!--title1-->
 						<span class='t1' >
 							Consultant
 						</span>
-						<!--/title1-->
-
-						<!--title2-->
 						<span class='t2' >
 							Programmer
 						</span>
-						<!--/title2-->
-
-						<!--title3-->
 						<span class='t3' >
 							Freelancer
 						</span>
-						<!--/title3-->
 					</div>
-					<!--/person's titles-->
 					<nav class='front-person-links' >
 						<!--
 							navigation links, data-section attribute points towards the section with id to be opened.
 						-->
 						<ul>
-							<li>
-								<a href='#' data-section='about' >About Me</a>
-							</li>
-							<li>
-								<a href='#' data-section='resume' >Resume</a>
-							</li>
 							<!-- <li>
 								<a href='#' data-section='services' >Services</a>
 							</li>
@@ -73,7 +55,7 @@
 								<a href="#" data-section='addUser' >Add User</a> 	
 							</li>
 							<li>
-								<a href="logout">Logout</a> 	
+								<a href='<?php echo base_url(); ?>index.php/logout'>Logout</a> 	
 							</li>
 						</ul>
 					</nav>
@@ -169,11 +151,11 @@
 
 								</div>
 
-								<div class='post-more' >
+							<!--<div class='post-more' >
 									<a href='#' class='more-link' >
 										Load More
 									</a>
-								</div>
+								</div>-->
 
 							</div>
 
@@ -183,7 +165,7 @@
 									<br>&nbsp;<br>
 									<div class='sidebar-widget' >
 
-										<div class='search-box' >
+										<!-- <div class='search-box' >
 
 											<input type='text' placeholder='Search' class='search-input' >
 
@@ -191,7 +173,7 @@
 												<i class='ion-ios-search' ></i>
 											</a>
 
-										</div>
+										</div> -->
 
 									</div>
 
@@ -246,7 +228,7 @@
 
 									</div> -->
 
-									<div class='sidebar-widget' >
+									<!-- <div class='sidebar-widget' >
 										<div class='widget-header' >
 
 											<h4>
@@ -324,7 +306,7 @@
 
 										</ul>
 
-									</div>
+									</div>-->
 
 								</div>
 

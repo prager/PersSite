@@ -74,7 +74,12 @@ class Blog_model extends CI_Model {
 	
 	public function save_entry($param) {
 		$param['date'] = time();
-		$param['id_user'] = $_SESSION['id_user'];
+		
+		if (session_status() !== PHP_SESSION_ACTIVE) {
+			session_start();
+		}
+		
+		$param['id_user'] = $_SESSION['user']['id_user'];
 		
 		$this->db->insert('blog', $param);
 	}
@@ -82,5 +87,11 @@ class Blog_model extends CI_Model {
 	public function delete_entry($id) {
 		$this->db->where('id_blog', $id);
 		$this->db->delete('blog');
+	}
+	
+	public function search_blog($key) {
+		$arr = array('title' => $key, 'text' => $key);
+		$this->db->like($arr);
+		return $this->db->get('blog')->result();
 	}
 }

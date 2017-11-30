@@ -12,7 +12,14 @@ class Home extends CI_Controller {
 	public function index() {
 		$data = NULL;
 		$this->load->view('templates/header');
-		$this->load->view('home/home_view', $data);
+		if($this->Login_model->is_logged()) {
+			$data = $this->Master_model->get_master_data();
+			$this->load->view('master/master_view', $data);
+		}
+		else {
+			$this->load->view('templates/header');
+			$this->load->view('home/home_view', $data);
+		}
 		$this->load->view('templates/footer');
 	}
 	
