@@ -25,4 +25,27 @@ class Home_model extends CI_Model {
 		return $msg;
 	}
 	
+	public function get_blog() {
+		
+		$retarr = array();
+		
+		if (session_status() !== PHP_SESSION_ACTIVE) {
+			session_start();
+			session_regenerate_id(FALSE);
+		}
+		
+		$this->db->select('fname, lname');
+		$this->db->where('level', 99);
+		$q = $this->db->get('users')->row();
+		
+		$retarr['user']['fname'] = $q->fname;
+		$retarr['user']['lname'] = $q->lname;
+		
+		$retarr['exerpts'] = $this->Blog_model->get_partial_entries(10, 0);
+		
+		$retarr['subjects'] = $this->arr_lib->subjects();
+		
+		return $retarr;
+	}
+	
 }

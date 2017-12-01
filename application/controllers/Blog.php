@@ -72,4 +72,52 @@ class Blog extends CI_Controller {
 		
 		$this->load->view('templates/footer_page');
 	}
+	
+	public function delete_blog() {
+		$this->load->view('templates/header_page');
+		
+		if($this->Login_model->is_logged()) {
+			$id = $this->uri->segment(3, 0);
+			$action = $this->uri->segment(4, 0);
+			if($action == 1) {
+				$this->Blog_model->delete_post($id);
+				$data['msg'] = 'The post was deleted. Thank you';
+				$this->load->view('home/status_view', $data);
+			}
+			elseif($action == 0) {
+				$data['msg'] = '<br>Do you wish to delete this post? ' . anchor('blog/delete_blog/'. $id . '/1', 'Yes') . ' / ' 
+						. anchor('blog/delete_blog/' . $id . '/2', 'No');
+				$this->load->view('home/status_view', $data);
+			}
+			else {
+				$data['msg'] = 'The post will not be deleted. Click on X to go to Home Page. Thank you';
+				$this->load->view('home/status_view', $data);
+			}
+		}
+		else {
+			$data['msg'] = '<br>You have to be logged in to access this page. Please, login. Thank you<br><br>';
+			$this->load->view('home/login_view', $data);
+		}
+		
+		$this->load->view('templates/footer_page');
+	}
+	
+	public function publish() {
+		
+		$this->load->view('templates/header_page');		
+		
+		if($this->Login_model->is_logged()) {
+			$id = $this->uri->segment(3, 0);
+			$status = $this->uri->segment(4, 0);
+			
+			$data['msg'] = $this->Blog_model->publish($id, $status);
+			$this->load->view('home/status_view', $data);
+		}
+		else {			
+			$data['msg'] = '<br>You have to be logged in to access this page. Please, login. Thank you<br><br>';
+			$this->load->view('home/login_view', $data);
+		}		
+		
+		$this->load->view('templates/footer_page');
+	}
 }

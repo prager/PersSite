@@ -64,7 +64,18 @@
 								<div class='post-more' >
 									<a href='<?php echo base_url() ;?>index.php/blog/edit_blog/<?php echo $post->id_blog?>' class='more-link' >
 										Edit Post
+									</a>&nbsp;&nbsp;
+									&nbsp;&nbsp;<a href='<?php echo base_url() ;?>index.php/blog/delete_blog/<?php echo $post->id_blog?>/0' class='more-link' >
+										Delete Post
 									</a>
+									<?php if($post->published == 1) {?>
+										&nbsp;&nbsp;<a href='<?php echo base_url() ;?>index.php/blog/publish/<?php echo $post->id_blog?>/0' class='more-link' >
+										De-publish Post</a>
+									<?php }
+									else {?>
+										&nbsp;&nbsp;<a href='<?php echo base_url() ;?>index.php/blog/publish/<?php echo $post->id_blog?>/1' class='more-link' >
+										Publish Post</a>
+									<?php }?>
 								</div>
 								<?php }?>
 							</div>

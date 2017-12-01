@@ -11,19 +11,7 @@ class Blog_model extends CI_Model {
 		$this->db->limit($cnt, $offset);
 		$this->db->order_by('id_blog', 'DESC');
 		$entries = $this->db->get('blog')->result();
-		$i = 0;
-		/*foreach($entries as $row) {
-			$author = $this->User_model->get_user_by_id($row->id_user);
-			$retarr[$i]['id_blog'] = $row->id_blog;
-			$retarr[$i]['author'] = $author;
-			$retarr[$i]['title'] = $row->title;
-			$snip = $row->text;
-			$retarr[$i]['text'] = $snip;
-			$retarr[$i]['date'] = $this->date_lib->set_date($row->date)['short'];
-			$i++;
-		}*/
-		
-		//return $retarr;	
+		$i = 0;	
 		return $entries;
 	}
 	
@@ -99,5 +87,23 @@ class Blog_model extends CI_Model {
 		$param['updated'] = time();
 		$this->db->where('id_blog', $id);
 		$this->db->update('blog', $param);
+	}
+	
+	public function delete_post($id) {
+		$this->db->where('id_blog', $id);
+		$this->db->delete('blog');
+	}
+	
+	public function publish($id, $status) {
+		$this->db->where('id_blog', $id);
+		if($status == 1) {
+			$this->db->update('blog', array('published' => 1));
+			$retval = 'Post Published';
+		}
+		else {
+			$this->db->update('blog', array('published' => 0));
+			$retval = 'Post De-published';
+		}
+		return $retval;
 	}
 }

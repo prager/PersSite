@@ -1593,29 +1593,20 @@
 					<div class='row' >
 
 						<div class='col-md-6 col-md-offset-3' >
-							<div class='section-header text-center' >
+						<div class='section-header text-center' >
 
-								<h2>My Blog</h2>
-
-								<!--divider-->
+								<h2>K's Blog</h2>
+								
 								<div class='divider-draft center' ></div>
-								<!--/divider-->
 
 								<p>
-									This is my blog where my future thoughts will live. Currently under development. Please, be patient and come back soon.
+									This is my blog where my thoughts live.
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				
-				<div class='container' >
-					<div class='row' >&nbsp;</div>
-					<div class='row' >&nbsp;</div>
-					<div class='row' >&nbsp;</div>
-					<div class='row' >&nbsp;</div>
-				</div>
-<!-- 
+
 				<div class='posts-block section-block' >
 
 					<div class='container' >
@@ -1626,163 +1617,69 @@
 
 								<div class='post' >
 
-									<div class='media' >
-										<img alt='symp' src='<?php echo base_url() ;?>/assets/img/bg2.jpg' >
-									</div>
-
 									<div class='content' >
-
+									<?php $i = 0;?>
+									<?php foreach($exerpts as $snip) {
+									if($snip['published'] == 1) {?>
 										<h4>
-											<a href='post.html' >
-												Simple Post With Image
-											</a>
+											<?php echo anchor('blog/show/' . $snip['id_blog'], $snip['title']); ?>
 										</h4>
 
 										<ul class='post-icons' >
 
 											<li>
 												<i class='ion-ios-person' ></i>
-												<span>Jan Kul&iacute;sek</span>
+												<span><?php echo $snip['fname'] . ' ' . $snip['lname']; ?></span>
 											</li>
 
 											<li>
 												<i class='ion-ios-clock' ></i>
-												<span>14 June 2015</span>
+												<span><?php echo $snip['date']; ?></span>
 											</li>
 
-											<li>
+											<!-- <li>
 												<i class='ion-ios-chatbubble' ></i>
 												<span>5</span>
-											</li>
-
-
+											</li> -->
 
 										</ul>
-
+										
+										<!--  <div class='media' >
+											<img alt='symp' src='<?php echo base_url() ;?>/assets/img/bg2.jpg' >
+										</div>
+										<br>-->
 										<p>
-											Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas tractatos. Sit eu saperet antiopam scripserit. Ei albucius consequuntur sea, no nominavi fabellas phaedrum his....
+											<?php echo $snip['snip']; ?>
 										</p>
 
-										<a href='post.html' class='read-more' >
+										<a href='<?php echo base_url(); ?>index.php/blog/show/<?php echo $snip['id_blog']; ?>' class='read-more' >
 											Read More
 											<i class='ion-ios-arrow-thin-right' ></i>
 										</a>
-
+										<hr />
+									<?php
+										$i++;
+									 }
+									}?>
 									</div>
 
 								</div>
 
-								<div class='post' >
-
-									<div class='media' >
-										<img alt='symp' src='<?php echo base_url() ;?>/assets/img/bg2.jpg' >
-									</div>
-
-									<div class='content' >
-
-										<h4>
-											<a href='post.html' >
-												Simple Post With Image
-											</a>
-										</h4>
-
-										<ul class='post-icons' >
-
-											<li>
-												<i class='ion-ios-person' ></i>
-												<span>Jan Kul&iacute;sek</span>
-											</li>
-
-											<li>
-												<i class='ion-ios-clock' ></i>
-												<span>14 June 2015</span>
-											</li>
-
-											<li>
-												<i class='ion-ios-chatbubble' ></i>
-												<span>5</span>
-											</li>
-
-
-
-										</ul>
-
-										<p>
-											Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas tractatos. Sit eu saperet antiopam scripserit. Ei albucius consequuntur sea, no nominavi fabellas phaedrum his....
-										</p>
-
-										<a href='post.html' class='read-more' >
-											Read More
-											<i class='ion-ios-arrow-thin-right' ></i>
-										</a>
-
-									</div>
-
-								</div>
-
-								<div class='post' >
-
-									<div class='media' >
-										<img alt='symp' src='<?php echo base_url() ;?>/assets/img/bg2.jpg' >
-									</div>
-
-									<div class='content' >
-
-										<h4>
-											<a href='post.html' >
-												Simple Post With Image
-											</a>
-										</h4>
-
-										<ul class='post-icons' >
-
-											<li>
-												<i class='ion-ios-person' ></i>
-												<span>Jan Kul&iacute;sek</span>
-											</li>
-
-											<li>
-												<i class='ion-ios-clock' ></i>
-												<span>14 June 2015</span>
-											</li>
-
-											<li>
-												<i class='ion-ios-chatbubble' ></i>
-												<span>5</span>
-											</li>
-
-
-
-										</ul>
-
-										<p>
-											Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas tractatos. Sit eu saperet antiopam scripserit. Ei albucius consequuntur sea, no nominavi fabellas phaedrum his....
-										</p>
-
-										<a href='post.html' class='read-more' >
-											Read More
-											<i class='ion-ios-arrow-thin-right' ></i>
-										</a>
-
-									</div>
-
-								</div>
-
-								<div class='post-more' >
+							<!--<div class='post-more' >
 									<a href='#' class='more-link' >
 										Load More
 									</a>
-								</div>
+								</div>-->
 
 							</div>
 
 							<div class='col-md-4' >
 
 								<div class='sidebar' >
-
+									
 									<div class='sidebar-widget' >
 
-										<div class='search-box' >
+										<!-- <div class='search-box' >
 
 											<input type='text' placeholder='Search' class='search-input' >
 
@@ -1790,11 +1687,11 @@
 												<i class='ion-ios-search' ></i>
 											</a>
 
-										</div>
+										</div> -->
 
 									</div>
 
-									<div class='sidebar-widget' >
+									<!-- <div class='sidebar-widget' >
 										<div class='categories-widget' >
 
 											<div class='widget-header' >
@@ -1804,35 +1701,46 @@
 											</div>
 
 											<ul class='sidebar-list' >
-
+											<?php foreach($subjects as $sub) { ?>
 												<li>
-													<a href='#' >Web Design</a>
+													<a href='#' ><?php echo $sub;?></a>
 												</li>
-
-												<li>
-													<a href='#' >Travel</a>
-												</li>
-
-												<li>
-													<a href='#' >Life Style</a>
-												</li>
-
-												<li>
-													<a href='#' >Photography</a>
-												</li>
-
-												<li>
-													<a href='#' >Technology</a>
-												</li>
-
-
+											<?php } ?>
 
 											</ul>
 
+										</div> 
+									</div>-->
+									
+									<div class='sidebar-widget' >
+										<div class='categories-widget' >
+										
+											<div class='widget-header' >
+												<h4>
+													<i class='ion-link' ></i> News
+												</h4>
+											</div>
+											
+											<ul class='sidebar-list' >
+												
+												<li>
+													<a href='http://foxnews.com' >Fox News</a>
+												</li>
+												
+												<li>
+													<a href='http://cnn.com' >CNN</a>
+												</li>
+												
+												<li>
+													<a href='http://nbc.com' >NBC</a>
+												</li>
+												
+											</ul>
+										
 										</div>
 									</div>
-
-									<div class='sidebar-widget' >
+																		
+									<!-- <div class='sidebar-widget' >
 
 										<div class='widget-header' >
 											<h4>
@@ -1843,39 +1751,26 @@
 
 
 											<ul class='sidebar-list' >
-
+											<?php $i = 0;?>
+											<?php foreach($exerpts as $snip) {?>
 												<li>
-													<a href='#' >
-														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
-													</a>
+													<?php 
+													if($i < 4) {
+														echo anchor('blog/show/' . $snip['id_blog'], $snip['title']);
+													}
+													else {
+														break;
+													}
+													$i++;
+													?>
 												</li>
-
-												<li>
-													<a href='#' >
-														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
-													</a>
-												</li>
-
-												<li>
-													<a href='#' >
-														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
-													</a>
-												</li>
-
-												<li>
-													<a href='#' >
-														Your Recent Post's Title. Lorem ipsum dolor sit amet is simply a dummy text.
-													</a>
-												</li>
-
-
+											<?php } ?>
 
 											</ul>
 
+									</div> -->
 
-									</div>
-
-									<div class='sidebar-widget' >
+									<!-- <div class='sidebar-widget' >
 										<div class='widget-header' >
 
 											<h4>
@@ -1953,7 +1848,7 @@
 
 										</ul>
 
-									</div>
+									</div>-->
 
 								</div>
 
@@ -1964,7 +1859,7 @@
 
 					</div>
 
-				</div> -->
+				</div>
 
 
 				<div class='footer bg-lightgray section-block' >
@@ -1974,7 +1869,7 @@
 						<div class='row' >
 
 							<div class='col-xs-6 text-left' >
-								<h4>Jan Kul&iacute;sek</h4>
+								<h4><?php echo $user['fname'] . ' ' . $user['lname']; ?></h4>
 							</div>
 
 							<div class='col-xs-6 text-right' >
