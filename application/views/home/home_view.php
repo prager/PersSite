@@ -352,8 +352,8 @@
 									<span>JLK Consulting in Concord, CA</span>
 
 									<p>
-									Current projects involve PHP, CodeIgniter<br>
-									and MySQL on back end. Up until retirement from<br>
+									Current projects involve LAMP stack: PHP, CodeIgniter<br>
+									and MySQL. Up until my retirement from<br>
 									the US Army on partime basis and since July 2016<br>
 									full time.
 									</p>
@@ -1600,7 +1600,8 @@
 								<div class='divider-draft center' ></div>
 
 								<p>
-									This is my blog where my thoughts live.
+									This is my blog where my thoughts live. Still under development, for example the Comments Section is coming. 
+									Come back and be surprised!
 								</p>
 							</div>
 						</div>
@@ -1712,33 +1713,7 @@
 										</div> 
 									</div>-->
 									
-									<div class='sidebar-widget' >
-										<div class='categories-widget' >
-										
-											<div class='widget-header' >
-												<h4>
-													<i class='ion-link' ></i> News
-												</h4>
-											</div>
-											
-											<ul class='sidebar-list' >
-												
-												<li>
-													<a href='http://foxnews.com' >Fox News</a>
-												</li>
-												
-												<li>
-													<a href='http://cnn.com' >CNN</a>
-												</li>
-												
-												<li>
-													<a href='http://nbc.com' >NBC</a>
-												</li>
-												
-											</ul>
-										
-										</div>
-									</div>
+									<?php include 'sidebar_incl.php'; ?>
 																		
 									<!-- <div class='sidebar-widget' >
 
