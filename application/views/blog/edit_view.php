@@ -58,8 +58,7 @@
 									</div>
 
 									<div class='form-group' >
-										<textarea rows='10' id='article' name='article' class='form-control' placeholder='Text' required>
-										<?php echo $post->text; ?></textarea>
+										<textarea rows='10' id='article' name='article' class='form-control' required><?php echo trim($post->text); ?></textarea>
 										<div class='help-block with-errors' ></div>
 									</div>
 

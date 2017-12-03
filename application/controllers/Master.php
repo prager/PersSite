@@ -43,19 +43,20 @@ class Master extends CI_Controller {
 	}
 	
 	public function add_blog() {
-		$this->load->view('templates/header_page');
+		
 		if($this->Login_model->is_logged()) {
 			$param['title'] = $this->input->post('title');
 			$param['subject'] = $this->input->post('subj');
-			$param['text'] = $this->input->post('article');
+			$param['text'] = trim($this->input->post('article'));
 			$this->Blog_model->save_entry($param);
 			$data = NULL;
-			$this->load->view('master/master_view', $data);
+			redirect(base_url());
 		}
 		else {
+			$this->load->view('templates/header_page');
 			$data['msg'] = '<br>You have to be logged in to access this page. Please, login. Thank you<br><br>';
 			$this->load->view('home/login_view', $data);
-		}
-		$this->load->view('templates/footer_page');		
+			$this->load->view('templates/footer_page');
+		}		
 	}
 }

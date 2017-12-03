@@ -49,6 +49,9 @@
 								<a href='#' data-section='addBlog' >Add Blog</a>
 							</li>
 							<li>
+								<a href='<?php echo base_url(); ?>index.php/blog/posts'>Edit Blog</a> 	
+							</li>
+							<li>
 								<a href='#' data-section='blog' >Blog</a>
 							</li>
 							<li>

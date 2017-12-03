@@ -9,7 +9,7 @@ class Blog_model extends CI_Model {
 		$retarr = array();
 		$this->db->select('*');
 		$this->db->limit($cnt, $offset);
-		$this->db->order_by('id_blog', 'DESC');
+		$this->db->order_by('date', 'DESC');
 		$entries = $this->db->get('blog')->result();
 		$i = 0;	
 		return $entries;
@@ -28,6 +28,12 @@ class Blog_model extends CI_Model {
 		$retarr['lname'] = $this->db->get('users')->row()->lname;
 		
 		return $retarr;
+	}
+	
+	public function get_posts() {
+		$this->db->select('id_blog, date, title, published');
+		$this->db->order_by('date', 'DESC');
+		return $this->db->get('blog')->result();
 	}
 	
 	public function get_partial_entries($cnt, $offset) {
@@ -49,9 +55,10 @@ class Blog_model extends CI_Model {
 			$snip = str_replace("\t", ' ', $snip);
 			$snip = str_replace("\n", ' ', $snip);
 			$snip = str_replace("\r", ' ', $snip);
-			$snip = str_replace("<br>", ' ', $snip);
-			$snip = str_replace("<br />", ' ', $snip);
+			//$snip = str_replace("<br>", ' ', $snip);
+			//$snip = str_replace("<br />", ' ', $snip);
 			$snip = preg_replace('/\s+/', ' ', $snip);
+			$snip = $snip . ' ...';
 				
 			$retarr[$i]['snip'] = $snip;
 			$i++;
@@ -97,7 +104,7 @@ class Blog_model extends CI_Model {
 	public function publish($id, $status) {
 		$this->db->where('id_blog', $id);
 		if($status == 1) {
-			$this->db->update('blog', array('published' => 1));
+			$this->db->update('blog', array('published' => 1, 'date' => time()));
 			$retval = 'Post Published';
 		}
 		else {

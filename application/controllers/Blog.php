@@ -120,4 +120,20 @@ class Blog extends CI_Controller {
 		
 		$this->load->view('templates/footer_page');
 	}
+	
+	public function posts() {
+		
+		$this->load->view('templates/header_page');
+		
+		if($this->Login_model->is_logged()) {
+			$data['posts'] = $this->Blog_model->get_posts();
+			$this->load->view('blog/posts_view', $data);
+		}
+		else {
+			$data['msg'] = '<br>You have to be logged in to access this page. Please, login. Thank you<br><br>';
+			$this->load->view('home/login_view', $data);
+		}
+		
+		$this->load->view('templates/footer_page');		
+	}
 }
