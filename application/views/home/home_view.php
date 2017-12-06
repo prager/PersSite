@@ -1603,6 +1603,7 @@
 									This is my blog where my thoughts live. Still under development, for example the Comments Section is coming. 
 									Come back and be surprised!
 								</p>
+								<p> <?php //echo 'test'; ?></p>
 							</div>
 						</div>
 					</div>
@@ -1619,6 +1620,40 @@
 								<div class='post' >
 
 									<div class='content' >
+									<?php if($pinned != NULL) {?>
+									<h4>
+										<?php echo anchor('blog/show/' . $pinned['id_blog'], $pinned['title']); ?>
+									</h4>
+									<ul class='post-icons' >
+
+										<li>
+											<i class='ion-ios-person' ></i>
+											<span><?php echo $pinned['fname'] . ' ' . $pinned['lname']; ?></span>
+										</li>
+
+										<li>
+												<i class='ion-ios-clock' ></i>
+												<span><?php echo $pinned['date']; ?></span>
+										</li>
+
+										<!-- <li>
+												<i class='ion-ios-chatbubble' ></i>
+												<span>5</span>
+										</li> -->
+
+									</ul>
+									
+									<p>
+										<?php echo $pinned['snip']; ?>
+									</p>
+
+									<a href='<?php echo base_url(); ?>index.php/blog/show/<?php echo $pinned['id_blog']; ?>' class='read-more' >
+										Read More
+									<i class='ion-ios-arrow-thin-right' ></i>
+									</a>
+									<hr />
+									
+									<?php }?>
 									<?php $i = 0;?>
 									<?php foreach($exerpts as $snip) {
 									if($snip['published'] == 1) {?>

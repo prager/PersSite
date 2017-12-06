@@ -13,6 +13,28 @@
 			<section id='post' class='blog-page blog-section' >
 				
 				<div class='posts-block section-block' >
+				
+					<div class='container' >
+	
+						<div class='row' >
+	
+							<div class='col-md-6 col-md-offset-3' >
+							<div class='section-header text-center' >
+	
+									<h2>K's Blog</h2>
+									
+									<div class='divider-draft center' ></div>
+	
+									<p>
+										This is my blog where my thoughts live. Still under development, for example the Comments Section is coming. 
+										Come back and be surprised!
+									</p>
+									<p> <?php //echo 'test'; ?></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 					
 					<div class='container' >
 						

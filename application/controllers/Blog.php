@@ -9,7 +9,10 @@ class Blog extends CI_Controller {
 	}
 	
 	public function index() {
-		
+		$this->load->view('templates/header_blog');
+		$data = $this->Home_model->get_blog();
+		$this->load->view('blog/blog_view', $data);
+		$this->load->view('templates/footer_page');
 	}
 	
 	public function show() {

@@ -41,7 +41,10 @@ class Home_model extends CI_Model {
 		$retarr['user']['fname'] = $q->fname;
 		$retarr['user']['lname'] = $q->lname;
 		
-		$retarr['exerpts'] = $this->Blog_model->get_partial_entries(10, 0);
+		$entries = $this->Blog_model->get_partial_entries(10, 0);
+		
+		$retarr['exerpts'] = $entries['entries'];
+		$retarr['pinned'] = $entries['pinned'];
 		
 		$retarr['subjects'] = $this->arr_lib->subjects();
 		

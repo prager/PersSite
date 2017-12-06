@@ -109,8 +109,43 @@
 								<div class='post' >
 
 									<div class='content' >
+									<?php if($pinned != NULL) {?>
+									<h4>
+										<?php echo anchor('blog/show/' . $pinned['id_blog'], $pinned['title']); ?>
+									</h4>
+									<ul class='post-icons' >
+
+										<li>
+											<i class='ion-ios-person' ></i>
+											<span><?php echo $pinned['fname'] . ' ' . $pinned['lname']; ?></span>
+										</li>
+
+										<li>
+												<i class='ion-ios-clock' ></i>
+												<span><?php echo $pinned['date']; ?></span>
+										</li>
+
+										<!-- <li>
+												<i class='ion-ios-chatbubble' ></i>
+												<span>5</span>
+										</li> -->
+
+									</ul>
+									
+									<p>
+										<?php echo $pinned['snip']; ?>
+									</p>
+
+									<a href='<?php echo base_url(); ?>index.php/blog/show/<?php echo $pinned['id_blog']; ?>' class='read-more' >
+										Read More
+									<i class='ion-ios-arrow-thin-right' ></i>
+									</a>
+									<hr />
+									
+									<?php }?>
 									<?php $i = 0;?>
-									<?php foreach($exerpts as $snip) {?>
+									<?php foreach($exerpts as $snip) {
+									if($snip['published'] == 1) {?>
 										<h4>
 											<?php echo anchor('blog/show/' . $snip['id_blog'], $snip['title']); ?>
 										</h4>
@@ -149,7 +184,8 @@
 										<hr />
 									<?php
 										$i++;
-									 }?>
+									 }
+									}?>
 									</div>
 
 								</div>
@@ -165,7 +201,7 @@
 							<div class='col-md-4' >
 
 								<div class='sidebar' >
-									<br>&nbsp;<br>
+									
 									<div class='sidebar-widget' >
 
 										<!-- <div class='search-box' >
@@ -180,7 +216,7 @@
 
 									</div>
 
-									<div class='sidebar-widget' >
+									<!-- <div class='sidebar-widget' >
 										<div class='categories-widget' >
 
 											<div class='widget-header' >
@@ -198,9 +234,11 @@
 
 											</ul>
 
-										</div>
-									</div>
-
+										</div> 
+									</div>-->
+									
+									<?php include 'sidebar_incl.php'; ?>
+																		
 									<!-- <div class='sidebar-widget' >
 
 										<div class='widget-header' >

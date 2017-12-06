@@ -179,7 +179,7 @@ body.section-show .close-btn{
 	top:0;
 	bottom:0;
 	border:solid 4px #BBB;
-	padding-top:100px;
+	padding-top:50px;
 	z-index:-9;
 	background:#FFF;
 	overflow-y:auto;
@@ -1296,14 +1296,14 @@ body.section-show .transition-mask:before{
 	Blog Section
 =======================================================================*/
 .posts-block{
-	padding:90px 0;
+	padding:60px 0;
 }
 .posts-block .section-header{
-	margin-bottom:60px;
+	margin-bottom:30px;
 }
 .post{
 	position:relative;
-	margin-bottom:60px;
+	margin-bottom:30px;
 }
 .post > .media > img{
 	max-width:100%;

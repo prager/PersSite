@@ -37,18 +37,12 @@ class Blog_model extends CI_Model {
 	}
 	
 	public function get_partial_entries($cnt, $offset) {
-		$retarr = array();
+		$entries = NULL;
+		$pinned = NULL;
 		
-		$entries = $this->get_entries($cnt, $offset);
+		$posts = $this->get_entries($cnt, $offset);
 		$i = 0;
-		foreach ($entries as $row) {
-			$retarr[$i]['fname'] = $this->User_model->get_user_by_id($row->id_user)->fname;
-			$retarr[$i]['lname'] = $this->User_model->get_user_by_id($row->id_user)->lname;
-			$retarr[$i]['date'] = $this->date_lib->set_date($row->date)['long'];
-			$retarr[$i]['title'] = $row->title;
-			$retarr[$i]['id_blog'] = $row->id_blog;
-			
-			$retarr[$i]['published']= $row->published;
+		foreach ($posts as $row) {
 			
 			$snip = $row->text;
 			$snip = substr($snip, 0, 330);
@@ -59,10 +53,32 @@ class Blog_model extends CI_Model {
 			//$snip = str_replace("<br />", ' ', $snip);
 			$snip = preg_replace('/\s+/', ' ', $snip);
 			$snip = $snip . ' ...';
+			
+			if($row->pinned == 0) {
+				$entries[$i]['fname'] = $this->User_model->get_user_by_id($row->id_user)->fname;
+				$entries[$i]['lname'] = $this->User_model->get_user_by_id($row->id_user)->lname;
+				$entries[$i]['date'] = $this->date_lib->set_date($row->date)['long'];
+				$entries[$i]['title'] = $row->title;
+				$entries[$i]['id_blog'] = $row->id_blog;
 				
-			$retarr[$i]['snip'] = $snip;
-			$i++;
+				$entries[$i]['published']= $row->published;
+				$entries[$i]['snip'] = $snip;
+				$i++;
+			}
+			else {
+				$pinned['fname'] = $this->User_model->get_user_by_id($row->id_user)->fname;
+				$pinned['lname'] = $this->User_model->get_user_by_id($row->id_user)->lname;
+				$pinned['date'] = $this->date_lib->set_date($row->date)['long'];
+				$pinned['title'] = $row->title;
+				$pinned['id_blog'] = $row->id_blog;
+				
+				$pinned['published']= $row->published;
+				$pinned['snip'] = $snip;
+			}
 		}
+		
+		$retarr['entries'] = $entries;
+		$retarr['pinned'] = $pinned;
 		
 		return $retarr;
 	}

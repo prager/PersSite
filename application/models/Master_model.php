@@ -213,7 +213,11 @@ class Master_model extends CI_Model {
 		
 		$retarr['user'] = $_SESSION['user'];
 		
-		$retarr['exerpts'] = $this->Blog_model->get_partial_entries(10, 0);
+		$posts = $this->Blog_model->get_partial_entries(10, 0);
+		
+		$retarr['exerpts'] = $posts['entries'];
+		
+		$retarr['pinned'] = $posts['pinned'];
 		
 		$retarr['subjects'] = $this->arr_lib->subjects();
 		
