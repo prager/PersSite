@@ -46,7 +46,7 @@
 									<div class='content' >
 									<?php if($pinned != NULL) {?>
 									<h4>
-										<?php echo anchor('blog/show/' . $pinned['id_blog'], $pinned['title']); ?>
+										<?php echo anchor('blog/article/' . $pinned['id_blog'], $pinned['title']); ?>
 									</h4>
 									<ul class='post-icons' >
 
@@ -71,7 +71,7 @@
 										<?php echo $pinned['snip']; ?>
 									</p>
 
-									<a href='<?php echo base_url(); ?>index.php/blog/show/<?php echo $pinned['id_blog']; ?>' class='read-more' >
+									<a href='<?php echo base_url(); ?>index.php/blog/article/<?php echo $pinned['id_blog']; ?>' class='read-more' >
 										Read More
 									<i class='ion-ios-arrow-thin-right' ></i>
 									</a>
