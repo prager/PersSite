@@ -144,8 +144,8 @@
 									
 									<?php }?>
 									<?php $i = 0;?>
-									<?php foreach($exerpts as $snip) {
-									if($snip['published'] == 1) {?>
+									<?php foreach($exerpts as $snip) {?>
+									
 										<h4>
 											<?php echo anchor('blog/article/' . $snip['id_blog'], $snip['title']); ?>
 										</h4>
@@ -177,14 +177,13 @@
 											<?php echo $snip['snip']; ?>
 										</p>
 
-										<a href='<?php echo base_url(); ?>index.php/blog/show/<?php echo $snip['id_blog']; ?>' class='read-more' >
+										<a href='<?php echo base_url(); ?>index.php/blog/article/<?php echo $snip['id_blog']; ?>' class='read-more' >
 											Read More
 											<i class='ion-ios-arrow-thin-right' ></i>
 										</a>
 										<hr />
 									<?php
 										$i++;
-									 }
 									}?>
 									</div>
 
