@@ -62,4 +62,30 @@ class Home extends CI_Controller {
 		$this->load->view('home/status_view', $data);
 		$this->load->view('templates/footer_page');
 	}
+	
+	public function register() {
+		$this->load->view('templates/header_page');
+		$this->load->view('home/register_view');
+		$this->load->view('templates/footer_page');
+	}
+	
+	public function reg_user() {
+		$param['fname'] = $this->input->post('fname');
+		$param['lname'] = $this->input->post('lname');
+		$param['username'] = $this->input->post('username');
+		$param['pass1'] = $this->input->post('pass1');
+		$param['pass2'] = $this->input->post('pass2');
+		$param['email'] = $this->input->post('email');
+		$param['email2'] = $this->input->post('email2');
+		
+		if($this->Home_model->reg_user($param)) {
+			$msg = 'Thank you for your registration. Your data have been saved for future Comments Section of K\'s Blog.';
+		}
+		else {
+			$msg = 'There was an error with the data you entered. Please, use different email and password and try again. Thank you!';
+		}
+		$this->load->view('templates/header_page');
+		$this->load->view('home/status_view', array('msg' => $msg));
+		$this->load->view('templates/footer_page');
+	}
 }

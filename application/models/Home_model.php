@@ -51,4 +51,25 @@ class Home_model extends CI_Model {
 		return $retarr;
 	}
 	
+	public function reg_user($param) {
+		$retval = FALSE;
+		
+		if(($param['pass1'] == $param['pass2']) && ($param['email'] == $param['email2'])) {
+			
+			$q = $this->db->get_where('users', array('email'=>$param['email']));
+			$q2 = $this->db->get_where('users', array('username'=>$param['username']));
+			
+			if(($q->num_rows() == 0) && ($q->num_rows() == 0)) {
+				unset($param['email2']);
+				unset($param['pass2']);
+				$param['password'] = password_hash($param['pass1'], PASSWORD_BCRYPT, array('cost' => 12));
+				unset($param['pass1']);
+				$this->db->insert('users', $param);
+				$retval = TRUE;
+			}
+		}
+		
+		return $retval;
+	}
+	
 }

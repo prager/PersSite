@@ -2104,7 +2104,12 @@
 										</div>
 
 									</div>
-									<div class='row' >&nbsp;</div>
+									<div class='row' >
+									<div class='section-header text-center' >									
+									For user registration click <?php echo anchor('home/register', 'here') ?>.
+									&nbsp;Forgot username or password? Click <?php echo anchor('home/recover', 'here'); ?>
+									</div>
+									</div>
 									<div class='form-group text-center' >
 										<button type='submit' class='symp-btn' >Login</button>
 									</div>
