@@ -26,7 +26,7 @@ class Home extends CI_Controller {
 	public function about() {
 		
 		$data = NULL;
-		//$this->load->view('templates/header');
+		$this->load->view('templates/header');
 		$this->load->view('about/about_view', $data);
 		$this->load->view('templates/footer');
 	}

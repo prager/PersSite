@@ -59,4 +59,11 @@ class Master extends CI_Controller {
 			$this->load->view('templates/footer_page');
 		}		
 	}
+	
+	public function edit_about() {
+		$data['msg'] = '';
+		$this->load->view('templates/header_page');
+		$this->load->view('master/edit_about_view', $data);
+		$this->load->view('templates/footer_page');
+	}
 }

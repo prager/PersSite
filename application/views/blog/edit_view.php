@@ -63,7 +63,8 @@
 									</div>
 
 									<div class='form-group text-center' >
-										<button type='submit' class='symp-btn' >Submit</button>
+										<button type='submit' class='symp-btn' >Submit</button>&nbsp;<a href="<?php echo base_url() ;?>index.php/blog/posts" class="butn symp-btn"
+										role="button">Back to Posts</a>
 									</div>
 								<?php echo form_close(); ?>
 								<!-- </form> -->

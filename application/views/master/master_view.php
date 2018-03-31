@@ -38,6 +38,9 @@
 							navigation links, data-section attribute points towards the section with id to be opened.
 						-->
 						<ul>
+							<li>
+								<a href='#' data-section='about' >About Me</a>
+							</li>
 							<!-- <li>
 								<a href='#' data-section='services' >Services</a>
 							</li>
@@ -72,7 +75,213 @@
 			<!--=============================================================================
 				/Front Section
 			===============================================================================-->
+			
+			<!--=============================================================================
+				About Section
+			===============================================================================-->
+			<section id='about' class='about-section section' >
+				<div class='basic-info section-block' >
+					<div class='container' >
+						<div class='section-header text-center' >
+							<h2>My Short Bio</h2>					
+							<!--divider-->
+							<div class='divider-draft center' ></div>
+							<!--/divider-->
 
+						</div>
+						<div class='row' >
+							<div class='col-md-4' >
+								<div class='about-person-img' >
+									<img src='<?php echo base_url() ;?>/assets/img/me.png' alt='symp'>
+								</div>
+							</div>
+							<div class='col-md-8 about-info' >
+								<p>
+								Please, be patient, my bio is coming soon. Feel free to come back to check for updates any time.</p>
+								
+								<p> If interested, I told some of my personal story during my first experiment
+								with <a href="https://getbootstrap.com/">Bootstrap</a> framework here: <a href="http://story.kulisek.org">
+								http://story.kulisek.org</a> <?php echo anchor_popup('master/edit_about', '(Edit)')?></p>
+								
+								<div class='clearfix' ></div>
+
+
+								<ul class='info-list' >
+
+									<li>
+										<div class='inner' >
+											<h4>Name</h4>
+											<p>Jan Kul&iacute;sek</p>
+										</div>
+									</li>
+									<li>
+										<div class='inner' >
+											<h4>Age</h4>
+											<p>Productive</p>
+										</div>
+									</li>
+									<li>
+										<div class='inner' >
+											<h4>Website</h4>
+											<p>kulisek.org</p>
+										</div>
+									</li>
+									<li>
+										<div class='inner' >
+											<h4>Hometown</h4>
+											<p>Concord, CA</p>
+										</div>
+									</li>
+								</ul>
+								<!-- <a href='#' class='symp-btn' >Hire Me For Work</a>
+								<a href='#' class='symp-btn link-btn' ><i class='ion-ios-download' ></i>Download Resume</a> -->
+							</div>
+						</div>
+					</div>	
+				</div>
+				<?php include 'edit_about_incl.php'; ?>
+				<!-- <div class='about-icons section-block' >
+					<div class='container' >
+						<div class='row' >
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-ios-lightbulb' ></i>
+									</div>
+									<div class='content' >
+										<h4>Creative</h4>
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-trophy' ></i>
+									</div>
+									<div class='content' >
+										<h4>Winner</h4>
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-ios-glasses' ></i>
+									</div>
+									<div class='content' >
+										<h4>Smart</h4>
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-ios-bolt' ></i>
+									</div>
+									<div class='content' >
+										<h4>Powerful</h4>
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-help-buoy' ></i>
+									</div>
+									<div class='content' >
+										<h4>Helper</h4>
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-happy' ></i>
+									</div>
+									<div class='content' >
+										<h4>Intelligent</h4>
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-ios-game-controller-b' ></i>
+									</div>
+									<div class='content' >
+										<h4>Gamer</h4>
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class='col-md-3' >
+								<div class='service' >
+									<div class='icon' >
+										<i class='ion-ios-pulse-strong' ></i>
+									</div>
+									<div class='content' >
+										<h4>Healthy</h4>
+										<p>
+											Ut aboramus, numquam corpora qui naex. Dolore aliquando id duo, voluptua laboramus quo ad.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>-->
+				<div class='footer bg-lightgray section-block' >
+					<div class='container' >
+						<div class='row' >
+							<div class='col-xs-6 text-left' >
+								<h4>Jan Kul&iacute;sek</h4>
+							</div>
+							<div class='col-xs-6 text-right' >
+								<ul class='footer-social' >
+									<li>
+										<a href='https://www.facebook.com/jkulisek' >
+											<i class='ion-social-facebook' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='https://plus.google.com/102144146559622259709' >
+											<i class='ion-social-googleplus' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='https://www.linkedin.com/in/jan-kul%C3%ADsek-13066b44' >
+											<i class='ion-social-linkedin' ></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--=============================================================================
+				/About Section
+			===============================================================================-->
 
 			<!--=============================================================================
 				Blog Section

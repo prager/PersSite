@@ -39,7 +39,7 @@
 								    <tr>
 								    	<td><?php echo $this->date_lib->set_date($row->date)['short'];?></td>
 								    	<td><?php echo $row->title; ?></td>
-								    	<td><?php echo anchor('blog/show/' . $row->id_blog, 'Show'); ?></td>
+								    	<td><?php echo anchor('blog/article/' . $row->id_blog, 'Show'); ?></td>
 								    	<td><?php 
 								    		if($row->published == 1) {
 								    			echo anchor('blog/publish/' . $row->id_blog . '/0', 'De-Publish');
