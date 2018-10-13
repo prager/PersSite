@@ -319,6 +319,18 @@
 							<h4>Education</h4>
 								<!-- <h4>Education</h4> -->
 							</li>
+							 <li class="inverse">
+								<div class='timeline-content' >
+									<h4>Professional Certificate</h4>
+									<span>Massachusetts Institute of Technology, MA</span>
+									<p>
+									Architecture and Systems Engineering
+									</p>
+								</div>
+								<div class='timeline-desc' >
+									<h4>2018</h4>
+								</div>
+							</li>
 							 <li>
 								<div class='timeline-desc' >
 									<h4>2009-2016</h4>
