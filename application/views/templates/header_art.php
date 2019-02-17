@@ -8,13 +8,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<meta property="og:title" content=<?php echo $title; ?> />
-	    <meta property="og:url" content="https://kulisek.org/blog/article/"<?php echo $content; ?> />
+	    <meta property="og:url" content="https://kulisek.org/blog/article/"<?php echo $content; ?> . "/" />
 	    <meta property="og:image" content="http://files.kulisek.org/kulis-og.png" />
 	    <meta property="og:description" content=<?php echo $desc; ?> />
 		
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<link rel="shortcut icon" href="<?php echo base_url() ;?>/assets/img/favicon.ico">
-		
+
 		<title>Jan Kul&iacute;sek</title>
 
 		<!--[if lt IE 9]>
@@ -36,8 +36,8 @@
 	<body>
 	
 	<!--close button-->
-		<!--<a href='<?php echo base_url(); ?>' class='close-btn' >
+		<a href='<?php echo base_url(); ?>' class='close-btn' >
 			<span></span>
 			<span></span>
-		</a>-->
+		</a>
 	<!--/close button-->

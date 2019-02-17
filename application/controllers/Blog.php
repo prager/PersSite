@@ -9,7 +9,10 @@ class Blog extends CI_Controller {
 	}
 	
 	public function index() {
-		$this->load->view('templates/header_blog');
+	    $blog_data['title'] = "Jan&nbsp;Kulisek";
+	    $blog_data['desc'] = "From&nbsp;my&nbsp;blog.&nbsp;Take&nbsp;it&nbsp;or&nbsp;leave&nbsp;it";
+	    $blog_data['content'] = "";
+		$this->load->view('templates/header_blog', $blog_data);
 		$data = $this->Home_model->get_blog();
 		$this->load->view('blog/blog_view', $data);
 		$this->load->view('templates/footer_page');
@@ -19,7 +22,10 @@ class Blog extends CI_Controller {
 		$id = $this->uri->segment(3, 0);
 		$data = $this->Blog_model->get_post($id);
 		
-		$this->load->view('templates/header_page');
+		$blog_data['title'] = str_replace(' ', '&nbsp;', $data['post']->title);		
+		$blog_data['content'] = $data['post']->id_blog;
+		$blog_data['desc'] = 'From&nbsp;my&nbsp;blog.&nbsp;Take&nbsp;it&nbsp;or&nbsp;leave&nbsp;it';
+		$this->load->view('templates/header_art', $blog_data);
 		if($this->Login_model->is_logged()) {
 			$data['logged'] = TRUE;
 		}
