@@ -27,7 +27,8 @@ class Blog extends CI_Controller {
 			$data['logged'] = FALSE;
 		}
 		$this->load->view('blog/post_view', $data);
-		$this->load->view('templates/footer_page');
+		$link['link'] = "https://www.facebook.com/sharer/sharer.php?u=https%3A//kulisek.org/index.php/blog/article/" . $id . "/";
+		$this->load->view('templates/footer_page_link', $link);
 	}
 	
 	public function search_blog() {

@@ -6,6 +6,12 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta property="og:title" content="Jan Kulisek" />
+	     <meta property="og:url" content="https://kulisek.org/" />
+	     <meta property="og:image" content="http://files.kulisek.org/kulis-og.png" />
+	     <meta property="og:description" content="My personal page." />
+		
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<link rel="shortcut icon" href="<?php echo base_url() ;?>/assets/img/favicon.ico">
 
