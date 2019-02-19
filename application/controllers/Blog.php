@@ -72,15 +72,27 @@ class Blog extends CI_Controller {
 			$param['subject'] = $this->input->post('subj');
 			$param['text'] = $this->input->post('article');
 			$this->Blog_model->edit_entry($param, $id);
-			$data = $this->Master_model->get_master_data();
-			$this->load->view('master/master_view', $data);
+			//$data = $this->Master_model->get_master_data();
+			//$this->load->view('master/master_view', $data);
+			
+			$data = $this->Blog_model->get_post($id);
+			
+			$blog_data['title'] = str_replace(' ', '&nbsp;', $data['post']->title);
+			$blog_data['content'] = $data['post']->id_blog;
+			$blog_data['desc'] = 'From&nbsp;my&nbsp;blog.&nbsp;Take&nbsp;it&nbsp;or&nbsp;leave&nbsp;it';
+			$this->load->view('templates/header_art', $blog_data);
+			
+			$data['logged'] = TRUE;
+			$this->load->view('blog/post_view', $data);
+			$link['link'] = "https://www.facebook.com/sharer/sharer.php?u=https%3A//kulisek.org/index.php/blog/article/" . $id . "/";
+			$this->load->view('templates/footer_page_link', $link);
 		}
 		else {
 			$data['msg'] = '<br>You have to be logged in to access this page. Please, login. Thank you<br><br>';
 			$this->load->view('home/login_view', $data);
-		}
+			$this->load->view('templates/footer_page');
+		}	
 		
-		$this->load->view('templates/footer_page');
 	}
 	
 	public function delete_blog() {
