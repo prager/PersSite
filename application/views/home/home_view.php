@@ -16,7 +16,7 @@
 				Front Section
 			===============================================================================-->
 			<section class='front-section' >
-				<div class='container' >
+				<div class='container' >					
 					<div class='transition-mask' ></div>
 					<div class='front-person-img' >
 						<!--person's image-->
@@ -75,12 +75,15 @@
 								<?php //anchor('home/login', 'Login'); ?>
 							</li>
 						</ul>
-					</nav>
+					</nav>					
+				
 					<div class='front-heading text-center' >
 						<h2>
 							Jan Kul&iacute;sek
 						</h2>
 					</div>
+					
+					
 				</div>
 			</section>
 			<!--=============================================================================

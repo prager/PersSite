@@ -72,8 +72,6 @@ class Blog extends CI_Controller {
 			$param['subject'] = $this->input->post('subj');
 			$param['text'] = $this->input->post('article');
 			$this->Blog_model->edit_entry($param, $id);
-			//$data = $this->Master_model->get_master_data();
-			//$this->load->view('master/master_view', $data);
 			
 			$data = $this->Blog_model->get_post($id);
 			
