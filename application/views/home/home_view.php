@@ -393,7 +393,7 @@
 
 									<p>
 									Prepared and resourced training for the US Army and<br> civilian personnel. During deployment in Iraq
-									developed C++<br> application for aviation parts management with<br> command prompt interface.
+									developed C++<br> application for aviation parts management with<br> command line interface.
 									</p>
 
 								</div>
