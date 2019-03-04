@@ -69,6 +69,12 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer_page');
 	}
 	
+	public function resume() {
+	    $this->load->view('templates/header_page');
+	    $this->load->view('home/resume_view');
+	    $this->load->view('templates/footer_page');
+	}
+	
 	public function reg_user() {
 		$param['fname'] = $this->input->post('fname');
 		$param['lname'] = $this->input->post('lname');

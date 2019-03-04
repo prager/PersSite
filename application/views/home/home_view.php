@@ -278,8 +278,8 @@
 										</a>
 									</li>
 									<li>
-										<a href='https://plus.google.com/102144146559622259709' >
-											<i class='ion-social-googleplus' ></i>
+										<a href='https://twitter.com/JanKulisek' >
+											<i class='ion-social-twitter' ></i>
 										</a>
 									</li>
 									<li>
@@ -311,6 +311,7 @@
 								<!--divider-->
 								<div class='divider-draft center' ></div>
 								<!--/divider-->
+								<p>Jan Kulisek in Concord, CA</p>
 							</div>
 						</div>
 					</div>
@@ -387,14 +388,12 @@
 
 								<div class='timeline-content' >
 
-									<h4>Operations NCO</h4>
+									<h4>Operations Manager</h4>
 									<span>US Army (many locations)</span>
 
 									<p>
-									Prepared and resourced training for the US Army personnel<br>
-									consisting of senior ranking Officiers and Non-Comissioned<br>
-									Officers regarding technical training in proprietory software,<br>
-									among many other duties. 
+									Prepared and resourced training for the US Army and<br> civilian personnel. During deployment in Iraq
+									developed C++<br> application for aviation parts management with<br> command prompt interface.
 									</p>
 
 								</div>
@@ -405,7 +404,7 @@
 
 								<div class='timeline-desc' >
 
-									<h4>1997-2002</h4>
+									<h4>2000-2002</h4>
 
 								</div>
 
@@ -414,10 +413,30 @@
 									<h4>Software Engineer</h4>
 									<span>Systron Donner in Concord, CA</span>
 
+									<p>Developed instrument testing
+									software for prototypes<br> of automotive yaw sensors in Visual Basic and C in<br> client-server architecture.
+									</p>
+
+								</div>
+
+							</li>
+
+							<li class='inverse' >
+
+								<div class='timeline-desc' >
+
+									<h4>1997-2000</h4>
+
+								</div>
+
+								<div class='timeline-content' >
+
+									<h4>Electronic Technician</h4>
+									<span>Systron Donner in Concord, CA</span>
+
 									<p>
-									Software engineer during 2000-2002 and electronic<br>
-									technician during 1997-2000. Developed instrument testing<br>
-									software in Visual Basic and C.
+									Tested automotive and aviation yaw sensors using variety of instruments including signal analyzers, oscilloscopes
+									volt and ampmeters. Developed simple test programs using Visual Basic.
 									</p>
 
 								</div>
@@ -613,10 +632,9 @@
 										</a>
 									</li>
 									<li>
-										<a href='https://plus.google.com/102144146559622259709' >
-											<i class='ion-social-googleplus' ></i>
+										<a href='https://twitter.com/JanKulisek' >
+											<i class='ion-social-twitter' ></i>
 										</a>
-									</li>
 									<li>
 										<a href='https://www.linkedin.com/in/jan-kul%C3%ADsek-13066b44' >
 											<i class='ion-social-linkedin' ></i>
@@ -1158,8 +1176,8 @@
 										</a>
 									</li>
 									<li>
-										<a href='https://plus.google.com/102144146559622259709' >
-											<i class='ion-social-googleplus' ></i>
+										<a href='https://twitter.com/JanKulisek' >
+											<i class='ion-social-twitter' ></i>
 										</a>
 									</li>
 									<li>
@@ -1573,8 +1591,8 @@
 										</a>
 									</li>
 									<li>
-										<a href='https://plus.google.com/102144146559622259709' >
-											<i class='ion-social-googleplus' ></i>
+										<a href='https://twitter.com/JanKulisek' >
+											<i class='ion-social-twitter' ></i>
 										</a>
 									</li>
 									<li>
@@ -1905,8 +1923,8 @@
 										</a>
 									</li>
 									<li>
-										<a href='https://plus.google.com/102144146559622259709' >
-											<i class='ion-social-googleplus' ></i>
+										<a href='https://twitter.com/JanKulisek' >
+											<i class='ion-social-twitter' ></i>
 										</a>
 									</li>
 									<li>
@@ -2040,8 +2058,8 @@
 										</a>
 									</li>
 									<li>
-										<a href='https://plus.google.com/102144146559622259709' >
-											<i class='ion-social-googleplus' ></i>
+										<a href='https://twitter.com/JanKulisek' >
+											<i class='ion-social-twitter' ></i>
 										</a>
 									</li>
 									<li>
@@ -2156,8 +2174,8 @@
 										</a>
 									</li>
 									<li>
-										<a href='https://plus.google.com/102144146559622259709' >
-											<i class='ion-social-googleplus' ></i>
+										<a href='https://twitter.com/JanKulisek' >
+											<i class='ion-social-twitter' ></i>
 										</a>
 									</li>
 									<li>

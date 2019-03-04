@@ -16,8 +16,8 @@
 										</a>
 									</li>
 									<li>
-										<a href='https://plus.google.com/102144146559622259709' >
-											<i class='ion-social-googleplus' ></i>
+										<a href='https://twitter.com/JanKulisek' >
+											<i class='ion-social-twitter' ></i>
 										</a>
 									</li>
 									<li>

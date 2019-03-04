@@ -36,8 +36,8 @@
 	<body>
 	
 	<!--close button-->
-		<!--<a href='<?php echo base_url(); ?>' class='close-btn' >
+		<a href='<?php echo base_url(); ?>' class='close-btn' >
 			<span></span>
 			<span></span>
-		</a>-->
+		</a>
 	<!--/close button-->
