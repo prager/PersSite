@@ -435,7 +435,7 @@
 									<span>Systron Donner in Concord, CA</span>
 
 									<p>
-									Tested automotive and aviation yaw sensors using variety of instruments including signal analyzers, oscilloscopes
+									Tested automotive and aviation yaw sensors using variety of instruments including signal analyzers, oscilloscopes,
 									volt and ampmeters. Developed simple test programs using Visual Basic.
 									</p>
 
