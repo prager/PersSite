@@ -1690,8 +1690,9 @@
 									<?php $i = 0;?>
 									<?php foreach($exerpts as $snip) {
 									if($snip['published'] == 1) {?>
+										<?php $id = $snip['id_blog']; ?>
 										<h4>
-											<?php echo anchor('blog/article/' . $snip['id_blog'], $snip['title']); ?>
+											<?php echo anchor('blog/article/' . $id, $snip['title']); ?>
 										</h4>
 
 										<ul class='post-icons' >
@@ -1706,25 +1707,13 @@
 												<span><?php echo $snip['date']; ?></span>
 											</li>
 
-											<!-- <li>
-												<i class='ion-ios-chatbubble' ></i>
-												<span>5</span>
-											</li> -->
-
 										</ul>
-										
-										<!--  <div class='media' >
-											<img alt='symp' src='<?php echo base_url() ;?>/assets/img/bg2.jpg' >
-										</div>
-										<br>-->
 										<p>
 											<?php echo $snip['snip']; ?>
 										</p>
 
-										<a href='<?php echo base_url(); ?>index.php/blog/article/<?php echo $snip['id_blog']; ?>' class='read-more' >
-											Read More
+										<?php echo anchor('blog/article/' . $id, 'Read More', 'class="read-more"'); ?>
 											<i class='ion-ios-arrow-thin-right' ></i>
-										</a>
 										<hr />
 									<?php
 										$i++;

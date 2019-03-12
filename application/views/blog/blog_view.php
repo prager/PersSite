@@ -112,10 +112,11 @@
 											<?php echo $snip['snip']; ?>
 										</p>
 
-										<a href='<?php echo base_url(); ?>index.php/blog/show/<?php echo $snip['id_blog']; ?>' class='read-more' >
-											Read More
+										<!-- <a href='<?php echo base_url(); ?>index.php/blog/show/<?php echo $snip['id_blog']; ?>' class='read-more' >
+											Read More -->
+											<?php echo anchor('blog/show/' . $snip['id_blog'], 'Read More', 'class="read-more"'); ?>
 											<i class='ion-ios-arrow-thin-right' ></i>
-										</a>
+										<!--</a>-->
 										<hr />
 									<?php
 										$i++;

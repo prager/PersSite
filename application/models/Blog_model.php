@@ -5,13 +5,11 @@ class Blog_model extends CI_Model {
 		$this->load->database();
 	}
 	
-	public function get_entries($cnt, $offset) {		
-		$retarr = array();
+	public function get_entries($cnt, $offset) {
 		$this->db->select('*');
 		$this->db->limit($cnt, $offset);
 		$this->db->order_by('date', 'DESC');
 		$entries = $this->db->get('blog')->result();
-		$i = 0;	
 		return $entries;
 	}
 	
@@ -42,17 +40,15 @@ class Blog_model extends CI_Model {
 		
 		$posts = $this->get_entries($cnt, $offset);
 		$i = 0;
+		$num_chars = 330;
 		foreach ($posts as $row) {
 			
 			$snip = $row->text;
-			$snip = substr($snip, 0, 330);
-			$snip = str_replace("\t", ' ', $snip);
-			$snip = str_replace("\n", ' ', $snip);
-			$snip = str_replace("\r", ' ', $snip);
-			//$snip = str_replace("<br>", ' ', $snip);
-			//$snip = str_replace("<br />", ' ', $snip);
-			$snip = preg_replace('/\s+/', ' ', $snip);
-			$snip = $snip . ' ...';
+			
+			$snip = strip_tags($snip);
+			$snip = html_entity_decode($snip, ENT_QUOTES, 'UTF-8');
+			$snip = mb_substr($snip, 0, $num_chars, 'UTF-8');			
+			$snip .= '...';
 			
 			if($row->pinned == 0) {
 				$entries[$i]['fname'] = $this->User_model->get_user_by_id($row->id_user)->fname;

@@ -41,7 +41,9 @@
 
 										<div class='col-md-6' >
 											<div class='form-group' >
-												<input type='text' id='title' name='title' class='form-control' value='<?php echo $post->title; ?>' required>
+											<!-- <label><?php echo 'post title: ' . $post->title; ?></label> -->
+												<input type='text' id='title'
+												maxlength="64" name='title' class='form-control' value='<?php echo $post->title; ?>' required>
 												<div class='help-block with-errors' ></div>
 
 											</div>
