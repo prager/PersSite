@@ -40,7 +40,7 @@
 						<div class='row' >
 							<div class='col-md-8 col-md-offset-2' >
 
-								<?php echo form_open('login', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>								
+								<?php echo form_open('login/load', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>								
 								<!-- <form class='contact-form' action='mail.php' method='post' data-toggle='validator' > -->
 
 									<div id='contact-form-result' ></div>
