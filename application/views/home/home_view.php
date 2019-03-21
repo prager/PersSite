@@ -72,11 +72,9 @@
 							<li>
 								<a href='#' data-section='ham' >KM6NFC</a>
 							</li>
-							<!-- <li>
-								<a href="#" data-section='login' >Login</a> 
-								<a href="<?php echo base_url() ;?>index.php/home/login">Login</a>								
-								<?php //anchor('home/login', 'Login'); ?>
-							</li>-->
+							<li>
+								<a href="#" data-section='login' >Login</a>
+							</li>
 						</ul>
 					</nav>					
 				
@@ -215,7 +213,7 @@
 								<br>
 								<p> Yes, ham radio even in the age of Internet is not a thing of the past. The opposite is actually true. Currently,
 								I became involved in one of the local Ham Radio Clubs called MDARC (Mount Diable Amateur Radio Club - 
-								<a href="http://mdarc.org" target="_blank">http://mdarc.org</a>.</p>
+								<a href="http://mdarc.org" target="_blank">http://mdarc.org</a>).</p>
 								<br>
 								<p> I am also a member of Amateur Radio Relay League (ARRL - 
 								<a href="http://arrl.org" target="_blank">http://arrl.org</a>) and as a regional ARRL East Bay Assistant Section Manager I have 
@@ -2090,7 +2088,7 @@
 						<div class='row' >
 							<div class='col-md-8 col-md-offset-2' >
 
-								<?php echo form_open('login', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>								
+								<?php echo form_open('login/load', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>								
 								<!-- <form class='contact-form' action='mail.php' method='post' data-toggle='validator' > -->
 
 									<div id='contact-form-result' ></div>
