@@ -26,15 +26,24 @@ class Blog extends CI_Controller {
 		$blog_data['content'] = $data['post']->id_blog;
 		$blog_data['desc'] = 'From&nbsp;my&nbsp;blog.&nbsp;Take&nbsp;it&nbsp;or&nbsp;leave&nbsp;it';
 		$this->load->view('templates/header_art', $blog_data);
-		if($this->Login_model->is_logged()) {
-			$data['logged'] = TRUE;
+		
+		if($data['post']->published) {
+    		if($this->Login_model->is_logged()) {
+    			$data['logged'] = TRUE;
+    		}
+    		else {
+    		    
+    			$data['logged'] = FALSE;
+    		}
+    		$this->load->view('blog/post_view', $data);
+    		$link['link'] = "https://www.facebook.com/sharer/sharer.php?u=https%3A//kulisek.org/index.php/blog/article/" . $id . "/";
+    		$this->load->view('templates/footer_page_link', $link);
 		}
 		else {
-			$data['logged'] = FALSE;
+		    $data['msg'] = '<br>You have to be logged in to access this page. Please, login. Thank you<br><br>';
+		    $this->load->view('home/login_view', $data);
+		    $this->load->view('templates/footer');
 		}
-		$this->load->view('blog/post_view', $data);
-		$link['link'] = "https://www.facebook.com/sharer/sharer.php?u=https%3A//kulisek.org/index.php/blog/article/" . $id . "/";
-		$this->load->view('templates/footer_page_link', $link);
 	}
 	
 	public function search_blog() {
