@@ -63,7 +63,7 @@ class Login_model extends CI_Model {
 	}
 	
 	public function check_login() {
-		$retval = TRUE;
+		$retval = FALSE;
 		
 		$this->db->select_max('id_sessions');
 		$max = $this->db->get('sessions')->row()->id_sessions;
