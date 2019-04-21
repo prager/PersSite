@@ -212,7 +212,7 @@
 								Not long ago I started playing with ham radio and became a radio amateur.</p>
 								<br>
 								<p> Yes, ham radio even in the age of Internet is not a thing of the past. The opposite is actually true. Currently,
-								I became involved in one of the local Ham Radio Clubs called MDARC (Mount Diable Amateur Radio Club - 
+								I became involved in one of the local Ham Radio Clubs called MDARC (Mount Diablo Amateur Radio Club - 
 								<a href="http://mdarc.org" target="_blank">http://mdarc.org</a>).</p>
 								<br>
 								<p> I am also a member of Amateur Radio Relay League (ARRL - 
