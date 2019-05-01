@@ -52,6 +52,9 @@
 								<a href='#' data-section='addBlog' >Add Blog</a>
 							</li>
 							<li>
+								<a href='#' data-section='addBio' >Add Bio</a>
+							</li>
+							<li>
 								<a href='<?php echo base_url(); ?>index.php/blog/posts'>Edit Blog</a> 	
 							</li>
 							<li>
@@ -97,7 +100,9 @@
 							</div>
 							<div class='col-md-8 about-info' >
 								<p>
-								Please, be patient, my bio is coming soon. Feel free to come back to check for updates any time.</p>
+								Please, be patient, my bio is coming soon. My bio page is 
+								<?php echo anchor('bio', 'here'); ?>
+								Feel free to come back to check for updates any time.</p>
 								
 								<p> If interested, I told some of my personal story during my first experiment
 								with <a href="https://getbootstrap.com/">Bootstrap</a> framework here: <a href="http://story.kulisek.org">
@@ -720,6 +725,117 @@
 			</section>
 			<!--=============================================================================
 				/Add Blog Section
+			===============================================================================-->
+			
+			<!--=============================================================================
+				Add Bio Section 
+			===============================================================================-->
+			<section id='addBio' class='contact-section section' >
+
+				<div class='contact-block section-block' >
+					<div class='container' >
+						<div class='row' >
+							<div class='col-md-6 col-md-offset-3' >
+
+								<div class='section-header text-center' >
+									<h2 class='animate text-over-block' >Add Bio Chapter</h2>
+									<!--divider-->
+									<div class='divider-draft center' ></div>
+									<!--/divider-->
+									<p>
+										Add Bio Chapter
+									</p>
+								</div>
+
+							</div>
+						</div>
+
+						<div class='row' >
+							<div class='col-md-8 col-md-offset-2' >
+								<?php echo form_open('master/add_bio', array('class' => 'contact-form', 'data-toggle' => 'validator')) ?>
+								<!-- <form id='contact' name='contact' class='contact-form' action='mail.php' method='post' data-toggle='validator' > -->
+
+									<div id='contact-form-result' ></div>
+
+									<div class='row' >
+
+										<div class='col-md-6' >
+											<div class='form-group' >
+												<input type='text' id='title' name='title' class='form-control' placeholder='Title' required>
+												<div class='help-block with-errors' ></div>
+
+											</div>
+										</div>
+									
+										<div class='col-md-6' >
+											<div class='form-group' >
+												<!-- <input type='text' id='title' name='title' class='form-control' placeholder='Title' required>-->
+												<?php //echo form_dropdown('subj', $this->arr_lib->subjects(), '0', 'class="form-control"'); ?>
+												<div class='help-block with-errors' ></div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class='form-group' >
+										<textarea rows='10' id='article' name='article' class='form-control' placeholder='Text' required></textarea>
+										<div class='help-block with-errors' ></div>
+									</div>
+
+									<div class='form-group text-center' >
+										<button type='submit' class='symp-btn' >Submit</button>
+									</div>
+								<?php echo form_close(); ?>
+								<!-- </form> -->
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+
+				<div class='footer bg-lightgray section-block' >
+
+					<div class='container' >
+
+						<div class='row' >
+
+							<div class='col-xs-6 text-left' >
+								<h4><?php echo $user['fname'] . ' ' . $user['lname']; ?></h4>
+							</div>
+
+							<div class='col-xs-6 text-right' >
+								<ul class='footer-social' >
+									<li>
+										<a href='https://www.facebook.com/jkulisek' >
+											<i class='ion-social-facebook' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='https://plus.google.com/102144146559622259709' >
+											<i class='ion-social-googleplus' ></i>
+										</a>
+									</li>
+									<li>
+										<a href='https://www.linkedin.com/in/jan-kul%C3%ADsek-13066b44' >
+											<i class='ion-social-linkedin' ></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+
+			</section>
+			<!--=============================================================================
+				/Add Bio Section
 			===============================================================================-->
 			
 			<!--=============================================================================

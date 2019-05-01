@@ -112,7 +112,9 @@
 							</div>
 							<div class='col-md-8 about-info' >
 								<p>
-								Please, be patient, my bio is coming soon. Feel free to come back to check for updates any time.</p>
+								Please, be patient, my bio is coming soon. My bio page is 
+								<?php echo anchor('bio', 'here'); ?>
+								Feel free to come back to check for updates any time.</p>
 								
 								<p> If interested, I told some of my personal story during my first experiment
 								with <a href="https://getbootstrap.com/">Bootstrap</a> framework here: <a href="http://story.kulisek.org">

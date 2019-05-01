@@ -51,6 +51,30 @@ class Home_model extends CI_Model {
 		return $retarr;
 	}
 	
+	public function get_bio() {
+	    
+	    $retarr = array();
+	    
+	    if (session_status() !== PHP_SESSION_ACTIVE) {
+	        session_start();
+	        session_regenerate_id(FALSE);
+	    }
+	    
+	    $this->db->select('fname, lname');
+	    $this->db->where('level', 99);
+	    $q = $this->db->get('users')->row();
+	    
+	    $retarr['user']['fname'] = $q->fname;
+	    $retarr['user']['lname'] = $q->lname;
+	    
+	    $entries = $this->Bio_model->get_partial_entries(10, 0);
+	    
+	    $retarr['exerpts'] = $entries['entries'];
+	    $retarr['pinned'] = $entries['pinned'];
+	    	    
+	    return $retarr;
+	}
+	
 	public function reg_user($param) {
 		$retval = FALSE;
 		

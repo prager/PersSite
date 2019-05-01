@@ -42,6 +42,24 @@ class Master extends CI_Controller {
 		redirect(base_url());
 	}
 	
+	public function add_bio() {
+	    
+	    if($this->Login_model->is_logged()) {
+	        $param['title'] = $this->input->post('title');
+	        //$param['subject'] = $this->input->post('subj');
+	        $param['text'] = trim($this->input->post('article'));
+	        $this->Bio_model->save_entry($param);
+	        $data = NULL;
+	        redirect(base_url());
+	    }
+	    else {
+	        $this->load->view('templates/header_page');
+	        $data['msg'] = '<br>You have to be logged in to access this page. Please, login. Thank you<br><br>';
+	        $this->load->view('home/login_view', $data);
+	        $this->load->view('templates/footer_page');
+	    }
+	}
+	
 	public function add_blog() {
 		
 		if($this->Login_model->is_logged()) {
